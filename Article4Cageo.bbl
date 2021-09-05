@@ -1,0 +1,280 @@
+\begin{thebibliography}{26}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Abuzied et~al.(2016)Abuzied, Ibrahim, Kaiser and
+  Saleem}]{Abuzied2016JoMS}
+\bibinfo{author}{Abuzied, S.}, \bibinfo{author}{Ibrahim, S.},
+  \bibinfo{author}{Kaiser, M.}, \bibinfo{author}{Saleem, T.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Geospatial susceptibility mapping of
+  earthquake-induced landslides in nuweiba area, gulf of aqaba, egypt}.
+\newblock \bibinfo{journal}{Journal of Mountain Science} \bibinfo{volume}{13},
+  \bibinfo{pages}{1286--1303}.
+%Type = Article
+\bibitem[{Ada and San(2017)}]{Ada2017NH}
+\bibinfo{author}{Ada, M.}, \bibinfo{author}{San, B.T.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Comparison of machine-learning techniques for
+  landslide susceptibility mapping using two-level random sampling (2lrs) in
+  alakir catchment area, antalya, turkey}.
+\newblock \bibinfo{journal}{Natural Hazards} \bibinfo{volume}{90},
+  \bibinfo{pages}{237--263}.
+\newblock \DOIprefix\doi{10.1007/s11069-017-3043-8}.
+%Type = Article
+\bibitem[{Aditian et~al.(2018)Aditian, Kubota and
+  Shinohara}]{Aditian2018Geomorphology}
+\bibinfo{author}{Aditian, A.}, \bibinfo{author}{Kubota, T.},
+  \bibinfo{author}{Shinohara, Y.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Comparison of {GIS}-based landslide susceptibility
+  models using frequency ratio, logistic regression, and artificial neural
+  network in a tertiary region of ambon, indonesia}.
+\newblock \bibinfo{journal}{Geomorphology} \bibinfo{volume}{318},
+  \bibinfo{pages}{101--111}.
+\newblock \DOIprefix\doi{10.1016/j.geomorph.2018.06.006}.
+%Type = Article
+\bibitem[{Aksoy and Ercanoglu(2012)}]{Aksoy2012Computers&Geosciences}
+\bibinfo{author}{Aksoy, B.}, \bibinfo{author}{Ercanoglu, M.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Landslide identification and classification by
+  object-based image analysis and fuzzy logic: An example from the azdavay
+  region (kastamonu, turkey)}.
+\newblock \bibinfo{journal}{Computers {\&} Geosciences} \bibinfo{volume}{38},
+  \bibinfo{pages}{87--98}.
+\newblock \DOIprefix\doi{10.1016/j.cageo.2011.05.010}.
+%Type = Article
+\bibitem[{Anbalagan et~al.(2015)Anbalagan, Kumar, Lakshmanan, Parida and
+  Neethu}]{Anbalagan2015GeoenvironmentalDisasters}
+\bibinfo{author}{Anbalagan, R.}, \bibinfo{author}{Kumar, R.},
+  \bibinfo{author}{Lakshmanan, K.}, \bibinfo{author}{Parida, S.},
+  \bibinfo{author}{Neethu, S.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Landslide hazard zonation mapping using frequency
+  ratio and fuzzy logic approach, a case study of lachung valley, sikkim}.
+\newblock \bibinfo{journal}{Geoenvironmental Disasters} \bibinfo{volume}{2}.
+\newblock \DOIprefix\doi{10.1186/s40677-014-0009-y}.
+%Type = Article
+\bibitem[{Barredo et~al.(2000)Barredo, Benavides, Herv{\'{a}}s and van
+  Westen}]{Barredo2000IJoAEOaG}
+\bibinfo{author}{Barredo, J.}, \bibinfo{author}{Benavides, A.},
+  \bibinfo{author}{Herv{\'{a}}s, J.}, \bibinfo{author}{van Westen, C.J.},
+  \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{Comparing heuristic landslide hazard assessment
+  techniques using {GIS} in the tirajana basin, gran canaria island, spain}.
+\newblock \bibinfo{journal}{International Journal of Applied Earth Observation
+  and Geoinformation} \bibinfo{volume}{2}, \bibinfo{pages}{9--23}.
+\newblock \DOIprefix\doi{10.1016/s0303-2434(00)85022-9}.
+%Type = Article
+\bibitem[{Bui et~al.(2020)Bui, Tsangaratos, Nguyen, Liem and
+  Trinh}]{Bui2020Catena}
+\bibinfo{author}{Bui, D.T.}, \bibinfo{author}{Tsangaratos, P.},
+  \bibinfo{author}{Nguyen, V.T.}, \bibinfo{author}{Liem, N.V.},
+  \bibinfo{author}{Trinh, P.T.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Comparing the prediction performance of a deep
+  learning neural network model with conventional machine learning models in
+  landslide susceptibility assessment}.
+\newblock \bibinfo{journal}{{CATENA}} \bibinfo{volume}{188},
+  \bibinfo{pages}{104426}.
+\newblock \DOIprefix\doi{10.1016/j.catena.2019.104426}.
+%Type = Article
+\bibitem[{Chen et~al.(2017)Chen, Xie, Wang, Pradhan, Hong, Bui, Duan and
+  Ma}]{2017Chenp147160}
+\bibinfo{author}{Chen, W.}, \bibinfo{author}{Xie, X.}, \bibinfo{author}{Wang,
+  J.}, \bibinfo{author}{Pradhan, B.}, \bibinfo{author}{Hong, H.},
+  \bibinfo{author}{Bui, D.T.}, \bibinfo{author}{Duan, Z.}, \bibinfo{author}{Ma,
+  J.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{A comparative study of logistic model tree, random
+  forest, and classification and regression tree models for spatial prediction
+  of landslide susceptibility}.
+\newblock \bibinfo{journal}{Catena} \bibinfo{volume}{151},
+  \bibinfo{pages}{147--160}.
+%Type = Article
+\bibitem[{Fang et~al.(2020)Fang, Wang, Peng and Hong}]{Fang2020IJoGIS}
+\bibinfo{author}{Fang, Z.}, \bibinfo{author}{Wang, Y.}, \bibinfo{author}{Peng,
+  L.}, \bibinfo{author}{Hong, H.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{A comparative study of heterogeneous
+  ensemble-learning techniques for landslide susceptibility mapping}.
+\newblock \bibinfo{journal}{International Journal of Geographical Information
+  Science} \bibinfo{volume}{35}, \bibinfo{pages}{321--347}.
+\newblock \DOIprefix\doi{10.1080/13658816.2020.1808897}.
+%Type = Article
+\bibitem[{de~Figueiredo et~al.(2021)de~Figueiredo, Schmitz, Lunelli,
+  Roisenberg, de~Freitas and Grana}]{de2021direct}
+\bibinfo{author}{de~Figueiredo, L.P.}, \bibinfo{author}{Schmitz, T.},
+  \bibinfo{author}{Lunelli, R.}, \bibinfo{author}{Roisenberg, M.},
+  \bibinfo{author}{de~Freitas, D.S.}, \bibinfo{author}{Grana, D.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Direct multivariate simulation-a stepwise conditional
+  transformation for multivariate geostatistical simulation}.
+\newblock \bibinfo{journal}{Computers \& Geosciences} \bibinfo{volume}{147},
+  \bibinfo{pages}{104659}.
+%Type = Article
+\bibitem[{Ghorbanzadeh et~al.(2019)Ghorbanzadeh, Blaschke, Gholamnia, Meena,
+  Tiede and Aryal}]{Ghorbanzadeh2019RemoteSensing}
+\bibinfo{author}{Ghorbanzadeh, O.}, \bibinfo{author}{Blaschke, T.},
+  \bibinfo{author}{Gholamnia, K.}, \bibinfo{author}{Meena, S.},
+  \bibinfo{author}{Tiede, D.}, \bibinfo{author}{Aryal, J.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Evaluation of different machine learning methods and
+  deep-learning convolutional neural networks for landslide detection}.
+\newblock \bibinfo{journal}{Remote Sensing} \bibinfo{volume}{11},
+  \bibinfo{pages}{196}.
+\newblock \DOIprefix\doi{10.3390/rs11020196}.
+%Type = Article
+\bibitem[{G{\'o}mez-Hern{\'a}ndez and Srivastava(1990)}]{gomez1990isim3d}
+\bibinfo{author}{G{\'o}mez-Hern{\'a}ndez, J.J.}, \bibinfo{author}{Srivastava,
+  R.M.}, \bibinfo{year}{1990}.
+\newblock \bibinfo{title}{Isim3d: An ansi-c three-dimensional multiple
+  indicator conditional simulation program}.
+\newblock \bibinfo{journal}{Computers \& Geosciences} \bibinfo{volume}{16},
+  \bibinfo{pages}{395--440}.
+%Type = Article
+\bibitem[{Guzzetti et~al.(1999)Guzzetti, Carrara, Cardinali and
+  Reichenbach}]{Guzzetti_1999_Geomorphology}
+\bibinfo{author}{Guzzetti, F.}, \bibinfo{author}{Carrara, A.},
+  \bibinfo{author}{Cardinali, M.}, \bibinfo{author}{Reichenbach, P.},
+  \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Landslide hazard evaluation: a review of current
+  techniques and their application in a multi-scale study, central italy}.
+\newblock \bibinfo{journal}{Geomorphology} \bibinfo{volume}{31},
+  \bibinfo{pages}{181--216}.
+%Type = Article
+\bibitem[{Hansen et~al.(2018)Hansen, Mosegaard and Cordua}]{hansen2018multiple}
+\bibinfo{author}{Hansen, T.M.}, \bibinfo{author}{Mosegaard, K.},
+  \bibinfo{author}{Cordua, K.S.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Multiple point statistical simulation using uncertain
+  (soft) conditional data}.
+\newblock \bibinfo{journal}{Computers \& Geosciences} \bibinfo{volume}{114},
+  \bibinfo{pages}{1--10}.
+%Type = Article
+\bibitem[{Kocaman et~al.(2020)Kocaman, Tavus, Nefeslioglu, Karakas and
+  Gokceoglu}]{2020Kocamanp118}
+\bibinfo{author}{Kocaman, S.}, \bibinfo{author}{Tavus, B.},
+  \bibinfo{author}{Nefeslioglu, H.A.}, \bibinfo{author}{Karakas, G.},
+  \bibinfo{author}{Gokceoglu, C.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Evaluation of floods and landslides triggered by a
+  meteorological catastrophe (ordu, turkey, august 2018) using optical and
+  radar data}.
+\newblock \bibinfo{journal}{Geofluids} \bibinfo{volume}{2020},
+  \bibinfo{pages}{1--18}.
+\newblock \DOIprefix\doi{10.1155/2020/8830661}.
+%Type = Article
+\bibitem[{Nefeslioglu et~al.(2012)Nefeslioglu, San, Gokceoglu and
+  Duman}]{Nefeslioglu2012IJoAEOaG}
+\bibinfo{author}{Nefeslioglu, H.}, \bibinfo{author}{San, B.},
+  \bibinfo{author}{Gokceoglu, C.}, \bibinfo{author}{Duman, T.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{An assessment on the use of terra {ASTER} l3a data in
+  landslide susceptibility mapping}.
+\newblock \bibinfo{journal}{International Journal of Applied Earth Observation
+  and Geoinformation} \bibinfo{volume}{14}, \bibinfo{pages}{40--60}.
+\newblock \DOIprefix\doi{10.1016/j.jag.2011.08.005}.
+%Type = Article
+\bibitem[{Pebesma(2004)}]{pebesma2004multivariable}
+\bibinfo{author}{Pebesma, E.J.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Multivariable geostatistics in s: the gstat package}.
+\newblock \bibinfo{journal}{Computers \& Geosciences} \bibinfo{volume}{30},
+  \bibinfo{pages}{683--691}.
+%Type = Article
+\bibitem[{Reichenbach et~al.(2018)Reichenbach, Rossi, Malamud, Mihir and
+  Guzzetti}]{Reichenbach2018ER}
+\bibinfo{author}{Reichenbach, P.}, \bibinfo{author}{Rossi, M.},
+  \bibinfo{author}{Malamud, B.D.}, \bibinfo{author}{Mihir, M.},
+  \bibinfo{author}{Guzzetti, F.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A review of statistically-based landslide
+  susceptibility models}.
+\newblock \bibinfo{journal}{Earth-Science Reviews} \bibinfo{volume}{180},
+  \bibinfo{pages}{60--91}.
+\newblock \DOIprefix\doi{10.1016/j.earscirev.2018.03.001}.
+%Type = Article
+\bibitem[{Roy and
+  Saha(2019)}]{Roy2019RemoteSensingApplicationsSocietyandEnvironment}
+\bibinfo{author}{Roy, J.}, \bibinfo{author}{Saha, D.S.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{{GIS}-based gully erosion susceptibility evaluation
+  using frequency ratio, cosine amplitude and logistic regression ensembled
+  with fuzzy logic in hinglo river basin, india}.
+\newblock \bibinfo{journal}{Remote Sensing Applications: Society and
+  Environment} \bibinfo{volume}{15}, \bibinfo{pages}{100247}.
+\newblock \DOIprefix\doi{10.1016/j.rsase.2019.100247}.
+%Type = Article
+\bibitem[{San(2014)}]{San2014IJoAEOaG}
+\bibinfo{author}{San, B.T.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{An evaluation of {SVM} using polygon-based random
+  sampling in landslide susceptibility mapping: The candir catchment area
+  (western antalya, turkey)}.
+\newblock \bibinfo{journal}{International Journal of Applied Earth Observation
+  and Geoinformation} \bibinfo{volume}{26}, \bibinfo{pages}{399--412}.
+\newblock \DOIprefix\doi{10.1016/j.jag.2013.09.010}.
+%Type = Article
+\bibitem[{Sevgen et~al.(2019)Sevgen, Kocaman, Nefeslioglu and
+  Gokceoglu}]{2019Sevgenp39403940}
+\bibinfo{author}{Sevgen, E.}, \bibinfo{author}{Kocaman, S.},
+  \bibinfo{author}{Nefeslioglu, H.A.}, \bibinfo{author}{Gokceoglu, C.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A novel performance assessment approach using
+  photogrammetric techniques for landslide susceptibility mapping with logistic
+  regression, ann and random forest}.
+\newblock \bibinfo{journal}{Sensors} \bibinfo{volume}{19},
+  \bibinfo{pages}{3940}.
+%Type = Article
+\bibitem[{Shahabi et~al.(2015)Shahabi, Hashim and
+  Ahmad}]{Shahabi2015EnvironmentalEarthSciences}
+\bibinfo{author}{Shahabi, H.}, \bibinfo{author}{Hashim, M.},
+  \bibinfo{author}{Ahmad, B.B.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Remote sensing and gis-based landslide susceptibility
+  mapping using frequency ratio, logistic regression, and fuzzy logic methods
+  at the central zab basin, iran}.
+\newblock \bibinfo{journal}{Environmental Earth Sciences} \bibinfo{volume}{73},
+  \bibinfo{pages}{1--22}.
+%Type = Article
+\bibitem[{Song et~al.(2018)Song, Niu, Xu, Ye, Peng, Guo, Li and
+  Chen}]{Song2018}
+\bibinfo{author}{Song, Y.}, \bibinfo{author}{Niu, R.}, \bibinfo{author}{Xu,
+  S.}, \bibinfo{author}{Ye, R.}, \bibinfo{author}{Peng, L.},
+  \bibinfo{author}{Guo, T.}, \bibinfo{author}{Li, S.}, \bibinfo{author}{Chen,
+  T.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Landslide susceptibility mapping based on weighted
+  gradient boosting decision tree in wanzhou section of the three gorges
+  reservoir area (china)}.
+\newblock \bibinfo{journal}{{ISPRS} International Journal of Geo-Information}
+  \bibinfo{volume}{8}, \bibinfo{pages}{4}.
+\newblock \DOIprefix\doi{10.3390/ijgi8010004}.
+%Type = Article
+\bibitem[{Wilde et~al.(2018)Wilde, Günther, Reichenbach, Malet and
+  Herv{\'{a}}s}]{2018Wildep97104}
+\bibinfo{author}{Wilde, M.}, \bibinfo{author}{Günther, A.},
+  \bibinfo{author}{Reichenbach, P.}, \bibinfo{author}{Malet, J.P.},
+  \bibinfo{author}{Herv{\'{a}}s, J.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Pan-european landslide susceptibility mapping:
+  {ELSUS} version 2}.
+\newblock \bibinfo{journal}{Journal of Maps} \bibinfo{volume}{14},
+  \bibinfo{pages}{97--104}.
+\newblock \DOIprefix\doi{10.1080/17445647.2018.1432511}.
+%Type = Article
+\bibitem[{Yalcin(2008)}]{Yalcin2008Catena}
+\bibinfo{author}{Yalcin, A.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Gis-based landslide susceptibility mapping using
+  analytical hierarchy process and bivariate statistics in ardesen (turkey):
+  Comparisons of results and confirmations}.
+\newblock \bibinfo{journal}{Catena} \bibinfo{volume}{72},
+  \bibinfo{pages}{1--12}.
+%Type = Article
+\bibitem[{Yu et~al.(2016)Yu, Wang, Niu and Hu}]{2016Yup487487}
+\bibinfo{author}{Yu, X.}, \bibinfo{author}{Wang, Y.}, \bibinfo{author}{Niu,
+  R.}, \bibinfo{author}{Hu, Y.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{A combination of geographically weighted regression,
+  particle swarm optimization and support vector machine for landslide
+  susceptibility mapping: A case study at wanzhou in the three gorges area,
+  china}.
+\newblock \bibinfo{journal}{Int J Environ Res Public Health}
+  \bibinfo{volume}{13}, \bibinfo{pages}{487}.
+
+\end{thebibliography}

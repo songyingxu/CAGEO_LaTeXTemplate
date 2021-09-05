@@ -363,6 +363,18 @@
  abstract={Support Vector Machine (SVM) is an excellent machine-learning method developed in recent years, suiting for both one-class samples and two-class samples, and with fruitful results in many other scientific research fields.In this paper, using a nature region in Hong Kong as a case study, the application of two-class SVM in landslide susceptibility mapping is described detailed.And to inspect the accuracy and versatility of the models, it was critically assessed by benchmarking against Logistic Regression (LR) method.The result suggests that: 1) Two-class SVM possesses better predic tion efficiency than that of LR method, and with more detailed optimal parameter researching, the performance could be more perfect.2) To extend the application of two-class SVM method in landslide susceptibility mapping, its computationally efficiency and optimal parameters hunting method should be promoted in a degree.3) Logistic regression method is a simple and stable method in landslide susceptibility mapping, as is coincide with other authors' conclusions.It is suitable to be taken as a standard rule to criticize new methods.},
 }
 
+@article{San2014An_LSM_SVM,
+  title={An evaluation of SVM using polygon-based random sampling in landslide susceptibility mapping: The Candir catchment area (western Antalya, Turkey)},
+  author={San, B. Taner},
+  journal={International Journal of Applied Earth Observations & Geoinformation},
+  volume={26},
+  number={1},
+  pages={399-412},
+  year={2014},
+ keywords={SVM;Polygon based random sampling (PBRS;Antalya;Landslide susceptibility mapping;ASTER},
+ abstract={The main purpose of this study was to present an approach that uses all of the input parameters from remotely sensed data to map landslide susceptibility. Furthermore, a novel sampling strategy, namely polygon-based random sampling (PBRS), which maintains the complete independence of sampled data sets for training and testing, was proposed to generate more realistic landslide susceptibility maps. An ASTER image of the Candir catchment area which is located in western Antalya (Turkey) was selected for implementing the proposed approach using a support vector machine classification (SVM) algorithm. The proposed methodology contains three sections: a polygon based sampling algorithm, an SVM classification, and an accuracy assessment. Two data sets (A and B) were generated and compared. Topographical parameters, proximity parameters and Normalized Difference Vegetation Index (NDVI) were used in the two data sets. In addition to these common parameters, data set (A) included lithological unit data produced from conventional geology maps and data set (B) had decorrelation stretched ASTER bands with four mineral (alunite, kaolinite, calcite, and quartz) indices. To construct and evaluate the models, training and testing data sets were generated using the proposed sampling strategy with three random sets for each data set (A and B). Next, the spatial performance of the obtained landslide susceptibility maps was evaluated using the area under the receiver-operating characteristic curves (AUC). The AUC values of the three random sets from data set (A) were 0.913, 0.912, and 0.906. The AUC values of the three random sets from data set (B) were 0.923, 0.912, and 0.907. After a comparison of the obtained AUC values, data set (B) presented considerably acceptable spatial performances in landslide susceptibility map production.},
+}
+
 @article{G2005Assessment_LSM_ANN,
   title={Assessment of shallow landslide susceptibility using artificial neural networks in Jabonosa River Basin, Venezuela},
   author={Gómez, H. and Kavzoglu, T.},
@@ -1862,31 +1874,6 @@ DOI = {10.5194/nhess-15-2257-2015}
   volume    = {90},
   doi       = {10.1007/s11069-017-3043-8},
   publisher = {Springer Science and Business Media {LLC}},
-}
-
-@Article{San2014IJoAEOaG,
-  author    = {B. Taner San},
-  journal   = {International Journal of Applied Earth Observation and Geoinformation},
-  title     = {An evaluation of {SVM} using polygon-based random sampling in landslide susceptibility mapping: The Candir catchment area (western Antalya, Turkey)},
-  year      = {2014},
-  month     = {feb},
-  pages     = {399--412},
-  volume    = {26},
-  doi       = {10.1016/j.jag.2013.09.010},
-  publisher = {Elsevier {BV}},
-}
-
-@Article{Nefeslioglu2012IJoAEOaG,
-  author    = {H.A. Nefeslioglu and B.T. San and C. Gokceoglu and T.Y. Duman},
-  journal   = {International Journal of Applied Earth Observation and Geoinformation},
-  title     = {An assessment on the use of Terra {ASTER} L3A data in landslide susceptibility mapping},
-  year      = {2012},
-  month     = {feb},
-  number    = {1},
-  pages     = {40--60},
-  volume    = {14},
-  doi       = {10.1016/j.jag.2011.08.005},
-  publisher = {Elsevier {BV}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
