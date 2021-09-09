@@ -1,6 +1,144 @@
 \begin{figure}
+  \centering
+  \includegraphics[width=12 cm]{Definitions/Fig1_study_area.eps}
+  \caption{Location of the study area. (\textbf{a}) Elevation of the study area. (\textbf{b}) Three Gorges Reservoir area. (\textbf{c}) Wanzhou District, the image is a Landsat 8 image with true color (R:band 4; G: band 3; B:band 2).}
+  \label{StudyArea}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+  \includegraphics[width=12 cm]{Definitions/Fig2_Stratigraphic_map.eps}
+  \caption{The geological and tectonic sketch of the study area.}
+  \label{Fig_Lithology}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+    \subfigure[~Elevation]{
+    \includegraphics[width=4.5cm]{Definitions/Elevation.png}
+    }
+    \quad
+    \subfigure[~Slope]{
+    \includegraphics[width=4.5cm]{Definitions/Slope.png}
+    }
+    \quad
+    \subfigure[~Aspect]{
+    \includegraphics[width=4.5cm]{Definitions/Aspect.png}
+    }
+    \quad
+    \subfigure[~Curvature]{
+    \includegraphics[width=4.5cm]{Definitions/Curvature.png}
+    }
+    \quad
+    \subfigure[~Distance to river]{
+    \includegraphics[width=4.5cm]{Definitions/DistanceToRiver.png}
+    }
+    \quad
+    \subfigure[~NDVI]{
+    \includegraphics[width=4.5cm]{Definitions/NDVI.png}
+    }
+  \end{figure}
+  \addtocounter{figure}{0} % 将图的编号减0
+  \begin{figure}
+  \centering
+  \addtocounter{subfigure}{0} % 子图编号加0
+    \subfigure[~NDWI]{
+    \includegraphics[width=4.5cm]{Definitions/NDWI.png}
+    }
+    \quad
+    \subfigure[~Rainfall]{
+    \includegraphics[width=4.5cm]{Definitions/Rain.png}
+    }
+    \quad
+    \subfigure[~Seismic intensity]{
+    \includegraphics[width=4.5cm]{Definitions/intensity.png}
+    }
+    \quad
+    \subfigure[~Landuse]{
+    \includegraphics[width=4.5cm]{Definitions/Landuse.png}
+    }
+    \quad
+    \subfigure[~TRI]{
+    \includegraphics[width=4.5cm]{Definitions/TRI.png}
+    }
+    \quad
+    \subfigure[~Lithology]{
+    \includegraphics[width=4.5cm]{Definitions/rock.png}
+    }
+    \caption{Landslide factors used in the study.(\textbf{a}) Elevation.(\textbf{b}) Slope.(\textbf{c}) Aspect.(\textbf{d}) Curvature.(\textbf{e}) Distance to the river (m).(\textbf{f}) NDVI.(\textbf{g}) NDWI.(\textbf{h}) Rainfall. (\textbf{i}) Seismic intensity. (\textbf{j}) Landuse. (\textbf{k}) TRI. (\textbf{l}) Lithology.}
+    \label{Fig_Landslide_Factors}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+  \includegraphics[width=10 cm]{Definitions/Workflow.png}
+  \caption{Overall workflow of this study.}
+  \label{LSM4RS_FlowChart}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+  \subfigure[WLR model]{
+  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_LR.png}
+  }
+  \quad
+  \subfigure[WLightGBM model]{
+  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_LGBM.png}
+  }
+  \quad
+  \subfigure[WRF model]{
+  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_RF.png}
+  }
+  \caption{Misclassification weights of 3 models. (a) LR model. (b) WLR model. (c) LightGBM model.}
+  \label{Fig_Weight}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+  \subfigure[LR model]{
+  \includegraphics[width=4.6cm]{Definitions/LSM_LR.png}
+  }
+  \quad
+  \subfigure[WLR model]{
+  \includegraphics[width=4.6cm]{Definitions/LSM_WLR.png}
+  }
+  \quad
+  \subfigure[LightGBM model]{
+  \includegraphics[width=4.6cm]{Definitions/LSM_GBDT.png}
+  }
+  \quad
+  \subfigure[WLightGBM model]{
+  \includegraphics[width=4.6cm]{Definitions/LSM_WGBDT.png}
+  }
+  \quad
+  \subfigure[RF model]{
+  \includegraphics[width=4.6cm]{Definitions/LSM_RF.png}
+  }
+  \quad
+  \subfigure[WRF model]{
+  \includegraphics[width=4.6cm]{Definitions/LSM_WRF.png}
+  }
+  \caption{LSM results of 6 models. (a) LSM using LR model. (b) LSM using WLR model. (c) LSM using LightGBM model. (d) LSM using WLightGBM model. (e) LSM using RF model. (f) LSM using WRF model.}
+  \label{LSM_Results}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
 \centering
-\includegraphics[width=0.75\textwidth]{figs_rev1/uncond_distribution_reference.png}
-\caption{ Caption here. Image from \cite{de2021direct}.}
-\label{fig:Figure1}
+\includegraphics[width=12 cm]{Definitions/Fig_LPI.jpg}
+\caption{Distribution ratio of different landslide susceptibility classes for 6 models.}
+\label{Fig_distribution}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+  \includegraphics[width=12 cm]{Definitions/Fig_ROC_All.png}
+  \caption{The ROC curve of 6 LSM models.}
+  \label{Fig_ROC_All}
 \end{figure}

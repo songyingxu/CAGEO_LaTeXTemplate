@@ -1,1 +1,29 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Caption here. Image from \cite {de2021direct}.}}{9}{figure.1}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Location of the study area. (\textbf {a}) Elevation of the study area. (\textbf {b}) Three Gorges Reservoir area. (\textbf {c}) Wanzhou District, the image is a Landsat 8 image with true color (R:band 4; G: band 3; B:band 2).}}{18}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces The geological and tectonic sketch of the study area.}}{19}{figure.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\nobreakspace {}Elevation}}}{20}{subfigure.3.6}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\nobreakspace {}Slope}}}{20}{subfigure.3.6}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\nobreakspace {}Aspect}}}{20}{subfigure.3.6}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\nobreakspace {}Curvature}}}{20}{subfigure.3.6}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\nobreakspace {}Distance to river}}}{20}{subfigure.3.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\nobreakspace {}NDVI}}}{20}{subfigure.3.6}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Landslide factors used in the study.(\textbf {a}) Elevation.(\textbf {b}) Slope.(\textbf {c}) Aspect.(\textbf {d}) Curvature.(\textbf {e}) Distance to the river (m).(\textbf {f}) NDVI.(\textbf {g}) NDWI.(\textbf {h}) Rainfall. (\textbf {i}) Seismic intensity. (\textbf {j}) Landuse. (\textbf {k}) TRI. (\textbf {l}) Lithology.}}{21}{figure.3}%
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\nobreakspace {}NDWI}}}{21}{figure.3}%
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {\nobreakspace {}Rainfall}}}{21}{figure.3}%
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {\nobreakspace {}Seismic intensity}}}{21}{figure.3}%
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {\nobreakspace {}Landuse}}}{21}{figure.3}%
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {\nobreakspace {}TRI}}}{21}{figure.3}%
+\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {\nobreakspace {}Lithology}}}{21}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Overall workflow of this study.}}{22}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Misclassification weights of 3 models. (a) LR model. (b) WLR model. (c) LightGBM model.}}{23}{figure.5}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {WLR model}}}{23}{figure.5}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {WLightGBM model}}}{23}{figure.5}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {WRF model}}}{23}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces LSM results of 6 models. (a) LSM using LR model. (b) LSM using WLR model. (c) LSM using LightGBM model. (d) LSM using WLightGBM model. (e) LSM using RF model. (f) LSM using WRF model.}}{24}{figure.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {LR model}}}{24}{figure.6}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {WLR model}}}{24}{figure.6}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {LightGBM model}}}{24}{figure.6}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {WLightGBM model}}}{24}{figure.6}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {RF model}}}{24}{figure.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {WRF model}}}{24}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Distribution ratio of different landslide susceptibility classes for 6 models.}}{25}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces The ROC curve of 6 LSM models.}}{26}{figure.8}%
