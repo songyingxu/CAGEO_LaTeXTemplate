@@ -82,18 +82,8 @@
  
 \begin{figure}
   \centering
-  \subfigure[WLR model]{
-  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_LR.png}
-  }
-  \quad
-  \subfigure[WLightGBM model]{
-  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_LGBM.png}
-  }
-  \quad
-  \subfigure[WRF model]{
-  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_RF.png}
-  }
-  \caption{Misclassification weights of 3 models. (a) LR model. (b) WLR model. (c) LightGBM model.}
+  \includegraphics[width=12cm]{Definitions/Fig_Weight_LGBM.png}
+  \caption{Misclassification weights of the WLightGBM models.}
   \label{Fig_Weight}
 \end{figure}
 \efloatseparator

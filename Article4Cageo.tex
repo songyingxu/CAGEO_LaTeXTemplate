@@ -129,7 +129,8 @@ The insights from this research will be useful for ameliorating the landslide su
 Dear Editors-in-Chief,
 \newline
 
-please find the enclosed manuscript "Combining class-weighted algorithm and machine learning models in landslide susceptibility mapping: a case study of Wanzhou section of the Three Gorges Reservoir, China" which we are submitting for exclusive consideration for publication in Computers \& Geosciences. We confirm that the submission follows all the requirements and includes all the items of the submission checklist.  
+please find the enclosed manuscript "Combining class-weighted algorithm and machine learning models in landslide susceptibility mapping: a case study of Wanzhou section of the Three Gorges Reservoir, China" which we are submitting for exclusive consideration for publication in Computers \& Geosciences. 
+We confirm that the submission follows all the requirements and includes all the items of the submission checklist.  
 \newline
 
 In this contribution, to solve the imbalanced landslide samples (landslides, non-landslides) in the landslide susceptibility evaluation, the application of the class-weighted algorithm combined with traditional machine learning (logistic regression) and ensemble machine learning models (LightGBM and random forest) have been investigated. 
@@ -249,14 +250,14 @@ The combination of the above natural environmental characteristics and human inf
 The landslide data mainly come from landslide geological surveys and the remote sensing images provided by Google Earth. 
 The DEM data with 30 $\times$ 30 m resolution derived from Aster GDEM. 
 A Landsat-8 satellite image which was acquired on 2013-08-12 were utilized as primary remote sensing data. 
-Table \ref{tab_datasource} shows the types and sources of data in this study. 
+Table \ref{tab_datasource} shows the formats and sources of data in this study. 
 
 \begin{table}
-  \centering
-  \caption{Data used, types and sources}
-  \begin{tabular}{ccc}
+  % \centering
+  \caption{Data used, formats and sources}
+  \begin{tabular}{lll}
     \toprule
-    {\textbf{Data used}} & \textbf{Type} & \textbf{Source}\\
+    {\textbf{Data used}} & \textbf{Format} & \textbf{Source}\\
     \midrule
     \textbf{Historic Landslide} & Shapefile & geological survey and Google Earth software\\
     \textbf{DEM} & Tiff & Aster GDEM (\url{https://earthdata.nasa.gov/})\\
@@ -275,7 +276,7 @@ A total of 12 landslide contributing factors and the types of data were shown in
   \caption{The names, types, and class of landslide impact factors.} 
   \begin{tabular}{llllll}
     \toprule
-    Variables & Name  & Variable type & Class \\
+    \textbf{Variables} & \textbf{Name}  & \textbf{Variable type} & \textbf{Class} \\
     \midrule
     Y     & Landslide  & Binary & Landslide \\
     X1    & Elevation  & Continuous & Topography \\
@@ -433,7 +434,7 @@ Table \ref{tab_CostMtx} shows the cost matrix used in this study.
 \begin{table}
   \centering
   \caption{Cost matrix used in this study.}
-  \begin{tabular}{c|cc}
+  \begin{tabular}{l|ll}
     \hline
     \diagbox{\textbf{True Label}}{\textbf{Predicted Label}} & \textbf{Non-landslide} & \textbf{Landslide}\\
     \hline
@@ -446,25 +447,7 @@ Table \ref{tab_CostMtx} shows the cost matrix used in this study.
 
 The reasons for choosing 1:19 are as follows: First, the ratio of landslide samples to non-landslide samples in the study area is approximately 1:19, and the choice of cost matrix is usually related to the sample ratio. 
 Secondly, set the misclassification cost of landslide samples to 1, and increase the misclassification cost of non-landslide samples from 1 to 30. 
-Use G-mean as the evaluation index to evaluate the three weighted models, and the best misclassification cost is 17, 18, 20 for WLR, WLightGBM, and WRF respectively (Figure \ref{Fig_Weight}). 
-Therefore, 19 is appropriate as a compromise.
-
-\begin{figure}
-  \centering
-  \subfigure[WLR model]{
-  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_LR.png}
-  }
-  \quad
-  \subfigure[WLightGBM model]{
-  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_LGBM.png}
-  }
-  \quad
-  \subfigure[WRF model]{
-  \includegraphics[width=4.6cm]{Definitions/Fig_Weight_RF.png}
-  }
-  \caption{Misclassification weights of 3 models. (a) LR model. (b) WLR model. (c) LightGBM model.}
-  \label{Fig_Weight}
-\end{figure}
+Use G-mean as the evaluation index to evaluate the three weighted models, and the best misclassification cost is 19 for WLightGBM (Figure \ref{Fig_Weight}). 
 
 \subsection{Model elevation}
 \subsubsection{Confusion matrix and ROC curve}
@@ -589,7 +572,7 @@ Table \ref{tab_evaluate} shows the Balanced accuracy, G-mean, Recall, Accuracy, 
 \begin{table}
   \centering
   \caption{Balanced accuracy, G-mean, Recall, Accuracy, AUC of the models.}
-    \begin{tabular}{cccccc}
+    \begin{tabular}{llllll}
     \toprule
           & \textbf{Balanced Accuracy} & \textbf{G-mean} & \textbf{Recall} & \textbf{Accuracy} & \textbf{AUC} \\
     \midrule
@@ -625,6 +608,13 @@ In the present study, the class-weighted algorithm combined with traditional mac
 
 The authors would like to acknowledge Prof. Chong Xu for helpful discussions. 
 This research was funded by Project Digital frequency spectrum analysis and mineralization precise prediction for continental su-pergene U-Re (No. 41872243), East China University of Technology Doctoral Research Startup Fund (No. DHBK2019218), Jiangxi Provincial Nuclear and Geoscience Data Science and System Engineering Technology Research Center (No.JETRCNGDSS202002), National Natural Science Foundation of China (No. 41807297), and Jiangxi Engineering Laboratory on Radioactive Geoscience and Big Data Technology (No. JELRGBDT202004).
+
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm]{Definitions/Fig_Weight_LGBM.png}
+  \caption{Misclassification weights of the WLightGBM models.}
+  \label{Fig_Weight}
+\end{figure}
 
 \begin{figure}
   \centering
