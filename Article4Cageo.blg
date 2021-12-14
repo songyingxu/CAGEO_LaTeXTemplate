@@ -4,44 +4,44 @@ The top-level auxiliary file: Article4Cageo.aux
 The style file: cas-model2-names.bst
 Database file #1: bibliography.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 26 entries,
+You've used 37 entries,
             2990 wiz_defined-function locations,
-            940 strings with 13696 characters,
-and the built_in function-call counts, 18911 in all, are:
-= -- 1396
-> -- 860
-< -- 7
-+ -- 343
-- -- 303
-* -- 2200
-:= -- 2763
-add.period$ -- 93
-call.type$ -- 26
-change.case$ -- 231
-chr.to.int$ -- 26
-cite$ -- 26
-duplicate$ -- 1363
-empty$ -- 1300
-format.name$ -- 383
-if$ -- 3440
+            1029 strings with 17002 characters,
+and the built_in function-call counts, 27306 in all, are:
+= -- 2021
+> -- 1258
+< -- 11
++ -- 501
+- -- 444
+* -- 3195
+:= -- 3989
+add.period$ -- 137
+call.type$ -- 37
+change.case$ -- 333
+chr.to.int$ -- 37
+cite$ -- 37
+duplicate$ -- 1945
+empty$ -- 1865
+format.name$ -- 557
+if$ -- 4973
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 282
-newline$ -- 160
-num.names$ -- 104
-pop$ -- 456
+missing$ -- 405
+newline$ -- 226
+num.names$ -- 148
+pop$ -- 641
 preamble$ -- 1
-purify$ -- 205
+purify$ -- 296
 quote$ -- 0
-skip$ -- 357
+skip$ -- 513
 stack$ -- 0
-substring$ -- 761
-swap$ -- 1064
+substring$ -- 1118
+swap$ -- 1533
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 234
+type$ -- 333
 warning$ -- 0
-while$ -- 117
+while$ -- 165
 width$ -- 0
-write$ -- 408
+write$ -- 585

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.4)  14 DEC 2021 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.4)  14 DEC 2021 15:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Article4Cageo
-(./Article4Cageo.tex
+**Article4CageoPlus
+(./Article4CageoPlus.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./cas-sc.cls
 Document Class: cas-sc 2018/09/22, 1.0: Formatting class for CAS single column articles
@@ -597,8 +597,8 @@ LaTeX Info: Redefining \\ on input line 3056.
 LaTeX Font Info:    Trying to load font information for T1+stix on input line 62.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
-) (./Article4Cageo.aux)
-\openout1 = `Article4Cageo.aux'.
+) (./Article4CageoPlus.aux)
+\openout1 = `Article4CageoPlus.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
@@ -662,9 +662,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
 LaTeX Info: Redefining \nameref on input line 62.
- (./Article4Cageo.out) (./Article4Cageo.out)
+ (./Article4CageoPlus.out) (./Article4CageoPlus.out)
 \@outlinefile=\write4
-\openout4 = `Article4Cageo.out'.
+\openout4 = `Article4CageoPlus.out'.
 
 
 *geometry* driver: auto-detecting
@@ -702,38 +702,38 @@ LaTeX Info: Redefining \nameref on input line 62.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \verbatim@out=\write5
-\openout5 = `Article4Cageo.abs'.
+\openout5 = `Article4CageoPlus.abs'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--138
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 133--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+stix on input line 154.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--148
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+stix on input line 156.
 (c:/texlive/2021/texmf-dist/tex/latex/stix/ts1stix.fd
 File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 163.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [0
@@ -741,74 +741,246 @@ File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.163 \maketitle
+l.165 \maketitle
                  [0]
-LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 163.
+LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stixex on input line 163.
+LaTeX Font Info:    Trying to load font information for LS2+stixex on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 163.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 163.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input line 163.
+LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stixbb on input line 163.
+LaTeX Font Info:    Trying to load font information for LS1+stixbb on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stixcal on input line 163.
+LaTeX Font Info:    Trying to load font information for LS2+stixcal on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stixsf on input line 163.
+LaTeX Font Info:    Trying to load font information for LS1+stixsf on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stixtt on input line 163.
+LaTeX Font Info:    Trying to load font information for LS2+stixtt on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 )
-Overfull \hbox (117.0831pt too wide) detected at line 163
+Overfull \hbox (117.0831pt too wide) detected at line 165
 []
  []
 
-(./Article4Cageo.abs)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 163.
+(./Article4CageoPlus.abs)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 165.
  (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]
-Overfull \hbox (53.07753pt too wide) in paragraph at lines 378--380
+) [1]
+
+Package natbib Warning: Citation `Abuzied2016JoMS' on page 2 undefined on input line 175.
+
+
+Package natbib Warning: Citation `2017Chenp147160' on page 2 undefined on input line 175.
+
+
+Package natbib Warning: Citation `2018Wildep97104' on page 2 undefined on input line 178.
+
+
+Package natbib Warning: Citation `2020Kocamanp118' on page 2 undefined on input line 179.
+
+
+Package natbib Warning: Citation `Yu2016IJERPH' on page 2 undefined on input line 180.
+
+
+Package natbib Warning: Citation `Song2018' on page 2 undefined on input line 180.
+
+
+Package natbib Warning: Citation `Yu2016IJERPH' on page 2 undefined on input line 182.
+
+
+Package natbib Warning: Citation `Song2018' on page 2 undefined on input line 182.
+
+
+Package natbib Warning: Citation `Fang2020IJoGIS' on page 2 undefined on input line 185.
+
+
+Package natbib Warning: Citation `Guzzetti_1999_Geomorphology' on page 2 undefined on input line 185.
+
+
+Package natbib Warning: Citation `Bui2020Catena' on page 2 undefined on input line 185.
+
+
+Package natbib Warning: Citation `Aditian2018Geomorphology' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Barredo2000IJoAEOaG' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Yalcin2008Catena' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Ghorbanzadeh2019RemoteSensing' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Aksoy2012Computers&Geosciences' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Anbalagan2015GeoenvironmentalDisasters' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Shahabi2015EnvironmentalEarthSciences' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Roy2019RemoteSensingApplicationsSocietyandEnvironment' on page 2 undefined on input line 186.
+
+
+Package natbib Warning: Citation `Abuzied2016JoMS' on page 2 undefined on input line 187.
+
+
+Package natbib Warning: Citation `Reichenbach2018ER' on page 2 undefined on input line 187.
+
+
+Package natbib Warning: Citation `Fang2020IJoGIS' on page 2 undefined on input line 187.
+
+
+Package natbib Warning: Citation `Aditian2018Geomorphology' on page 2 undefined on input line 189.
+
+
+Package natbib Warning: Citation `Bui2020Catena' on page 2 undefined on input line 189.
+
+
+Package natbib Warning: Citation `Bui2020Catena' on page 2 undefined on input line 190.
+
+
+Package natbib Warning: Citation `Ayalew2005Geomorphology' on page 2 undefined on input line 191.
+
+
+Package natbib Warning: Citation `Eeckhaut2006Geomorphology' on page 2 undefined on input line 191.
+
+
+Package natbib Warning: Citation `Bai2010Geomorphology' on page 2 undefined on input line 191.
+
+
+Package natbib Warning: Citation `Akgun2012Landslides' on page 2 undefined on input line 191.
+
+
+Package natbib Warning: Citation `Sevgen2019S' on page 2 undefined on input line 191.
+
+
+Package natbib Warning: Citation `Dag2020EES' on page 2 undefined on input line 191.
+
+
+Package natbib Warning: Citation `Althuwaynee2014Landslides' on page 2 undefined on input line 192.
+
+
+Package natbib Warning: Citation `Napoli2020Landslides' on page 2 undefined on input line 192.
+
+
+Package natbib Warning: Citation `Hong2020SoTTE' on page 2 undefined on input line 192.
+
+
+Package natbib Warning: Citation `Saha2021SoTTE' on page 2 undefined on input line 192.
+
+
+Package natbib Warning: Citation `Breiman2001' on page 2 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Youssef2015Landslides' on page 2 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Kim2017GI' on page 2 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Song2018' on page 2 undefined on input line 194.
+
+[2]
+
+Package natbib Warning: Citation `San2014IJoAEOaG' on page 3 undefined on input line 197.
+
+
+Package natbib Warning: Citation `Ada2017NH' on page 3 undefined on input line 197.
+
+
+Package natbib Warning: Citation `Aktas2019C&G' on page 3 undefined on input line 197.
+
+
+Package natbib Warning: Citation `Yu2016IJERPH' on page 3 undefined on input line 218.
+
+
+Package natbib Warning: Citation `Song2018' on page 3 undefined on input line 218.
+
+
+Package natbib Warning: Citation `Song2018' on page 3 undefined on input line 224.
+
+[3] [4]
+
+Package natbib Warning: Citation `Ayalew2005Geomorphology' on page 5 undefined on input line 256.
+
+
+Package natbib Warning: Citation `Bai2010Geomorphology' on page 5 undefined on input line 256.
+
+
+Package natbib Warning: Citation `Song2018' on page 5 undefined on input line 256.
+
+
+Package natbib Warning: Citation `Ayalew2005Geomorphology' on page 5 undefined on input line 258.
+
+
+Package natbib Warning: Citation `Bai2010Geomorphology' on page 5 undefined on input line 258.
+
+
+Package natbib Warning: Citation `Friedman2002_GBoost' on page 5 undefined on input line 271.
+
+[5]
+
+Package natbib Warning: Citation `Breiman2001' on page 6 undefined on input line 278.
+
+
+Package natbib Warning: Citation `Youssef2015Landslides' on page 6 undefined on input line 280.
+
+[6]
+
+Package natbib Warning: Citation `Jr2014IJoGIS' on page 7 undefined on input line 308.
+
+[7] [8] [9] [10]
+Overfull \hbox (53.07753pt too wide) in paragraph at lines 380--382
 \T1/stix/m/n/10 Provin-cial Nu-clear and Geo-science Data Sci-ence and Sys-tem En-gi-neer-ing Tech-nol-ogy Re-search Cen-ter (No.JETRCNGDSS202002),
  []
 
-[11] [12] (./Article4Cageo.bbl [13] [14]) AED endfloat: Processing end Figures and Tables [15] (./Article4Cageo.aux)
-Package rerunfilecheck Info: File `Article4Cageo.out' has not changed.
+[11]
+No file Article4CageoPlus.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+AED endfloat: Processing end Figures and Tables [12] (./Article4CageoPlus.aux)
+Package rerunfilecheck Info: File `Article4CageoPlus.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16773 strings out of 478994
- 236979 string characters out of 5862207
- 555457 words of memory out of 5000000
- 33876 multiletter control sequences out of 15000+600000
+ 16608 strings out of 478994
+ 233001 string characters out of 5862207
+ 548426 words of memory out of 5000000
+ 33754 multiletter control sequences out of 15000+600000
  505444 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,8n,88p,3477b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,8n,88p,3481b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stix/STIXGeneral-BoldItalic.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on Article4Cageo.pdf (17 pages, 285985 bytes).
+Output written on Article4CageoPlus.pdf (14 pages, 262084 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 340 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
