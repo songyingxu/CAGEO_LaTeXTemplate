@@ -63,10 +63,10 @@
 \let\WriteBookmarks\relax
 \def\floatpagepagefraction{1}
 \def\textpagefraction{.001}
-\shorttitle{Combining class-weighted algorithm and machine learning models in landslide susceptibility mapping}
+\shorttitle{Comparison of deep learning and ensemble learning methods in slope-unit-based landslide susceptibility prediction}
 \shortauthors{Yingxu Song et al}
 
-\title [mode = title]{Comparison of deep learning methods and ensemble learning methods in the evaluation of landslide susceptibility}
+\title [mode = title]{Comparison of deep learning and ensemble learning methods in slope-unit-based landslide susceptibility prediction}
 
 
 
@@ -111,6 +111,7 @@ auid=000,bioid=1,orcid=0000-0002-9273-2019]
 
 
 \begin{abstract}
+In this article, we discussed slope-unit-based landslide
 This study aims to investigate the application of the class-weighted algorithm combined with traditional machine learning (logistic regression) and ensemble machine learning models (LightGBM and random forest) to the landslide susceptibility evaluation. 
 Wanzhou section of the Three Gorges Reservoir area, China, which have numerous landslides and the number of landslide samples is 19 times more than non-landslide samples, is chosen as an example. 
 The class-weighted algorithm focuses on the class-imbalanced problem of landslide and non-landslide samples in the assessment of landslide susceptibility and can turn the class-imbalanced issue into a cost-sensitive problem by setting unequal weights for different classes, which contribute to improving landslide susceptibility evaluation accuracy.   
@@ -127,7 +128,8 @@ The insights from this research will be useful for ameliorating the landslide su
 Dear Editors-in-Chief,
 \newline
 
-please find the enclosed manuscript "Combining class-weighted algorithm and machine learning models in landslide susceptibility mapping: a case study of Wanzhou section of the Three Gorges Reservoir, China" which we are submitting for exclusive consideration for publication in Computers \& Geosciences. We confirm that the submission follows all the requirements and includes all the items of the submission checklist.  
+please find the enclosed manuscript "Comparison of deep learning and ensemble learning methods in landslide susceptibility prediction " which we are submitting for exclusive consideration for publication in Computers \& Geosciences. 
+We confirm that the submission follows all the requirements and includes all the items of the submission checklist.  
 \newline
 
 In this contribution, to solve the imbalanced landslide samples (landslides, non-landslides) in the landslide susceptibility evaluation, the application of the class-weighted algorithm combined with traditional machine learning (logistic regression) and ensemble machine learning models (LightGBM and random forest) have been investigated. 
@@ -146,20 +148,20 @@ Thanks for your consideration.
 Sincerely,
 \newline
 
-Yingxu Song
+Huijuan Zhang
 \newline
 Jiangxi Engineering Laboratory on Radioactive Geoscience and Big Data Technology, School of Information and Engineering, East China University of Technology, Nanchang, 330013, Jiangxi, China; yxsong@ecut.edu.cn
 \end{coverletter}
 
  
 \begin{highlights}
-\item The imbalanced landslide samples (landslides, non-landslides) in the landslide susceptibility evaluation is emphasized.
-\item The class-weighted algorithm combined with machine learning (Logistic regression) and ensemble machine learning models (LightGBM and random forest) were applied to the landslide susceptibility evaluation.
-\item The weighted models are applicable for solving the problem of imbalanced landslide samples and have improved the landslide susceptibility mapping well.
+\item This study shows that deep learning methods worse than ensemble learning methods, which has certain enlightenment significance for the selection of methods in the evaluation of landslide susceptibility when the landslide samples are not large.
+\item The AutoML tools were used to train the best ensemble machine learning model, which could reduce unnecessary manual operations, and the LightGBM method was better than the others.
+\item The ensemble models are much more applicable for slope-unit-based landslide susceptibility prediction than deep learning models.
 \end{highlights}
 
 \begin{keywords}
-landslide susceptibility mapping\sep class-weighted algorithm \sep imbalanced landslide data \sep machine learning model \sep Three Gorges Reservoir area
+landslide susceptibility prediction\sep deeplearning \sep slope-unit-based \sep ensemble learning \sep Three Gorges Reservoir area
 \end{keywords}
 
 \maketitle 
@@ -170,6 +172,20 @@ landslide susceptibility mapping\sep class-weighted algorithm \sep imbalanced la
 
 
 \section{Introduction}
+Landslide is one of the major geological hazards, which often causes heavy damage, leading to huge economic losses and casualties. 
+landslide susceptibility prediction (LSP) is widely used in the management of landslide disasters to answer the question of "where" the landslide might occur \citep{pourghasemi2018analysis}. 
+By combining geomorphologic conditions (slope, aspect, landcover, etc.) and dynamic factors (rainfall, earthquake, etc.) , LSP can be regarded as a binary classification problem \citep{Song2018, Khan2021}. 
+Therefore, a large number of statistical methods and machine learning methods have been introduced into LSP, such as imformation value \citep{chen2016comparison_LSM_INFORVALUE, Gao2006IV_Wanzhou}, analytic hierarchy process (AHP) \citep{Park2013Landslide_LSM_AHP, Kayastha2013Application_LSM_AHP, Pourghasemi2013Landslide_LSM_AHP, Yalcin2008Catena, Yoshimatsu2006}, support vector machine (SVM) \citep{Marjanovi2011Landslide_LSM_SVM}, logistic regression (LR) \citep{2017Chenp147160,Ayalew2005Geomorphology,Pourghasemi2013landslide_LR_AHP,Solaimani2013LSM_FR_LR,Tsangaratos2016Comparison_LR_Bayas,Ozdemir2013ALSM_FR_WE_LR,Wu2015LSM_LR_FR,Lee2007LSM_FR_LR_ANN,Das2010LSM_LR_RMC}, artificial neural networks (ANN) \citep{Sevgen2019S, Bui2016Landslides_SVM_ANN_LR}, etc. 
+
+With the development and maturity of deep learning technology, more and more scholars have used deep learning methods in LSP \citep{Prakash2020, Ngo2021, Nhu2020, Dao2020, Ghorbanzadeh2019RemoteSensing, Bui2020Catena}.
+However, few studies have explored whether deep learning methods are suitable for LSP.
+
+Mapping unit is the smallest segmentation unit in landslide susceptibility prediction, which could be divided into grid units, terrain units, unique condition units, slope units and topographic units \citep{Zhao2021}.
+Grid units are easy to extract and carry out, which are widely used in the LSP. 
+Compared with the grid units, the slope units have a closer relationship with geological and geomorphological data \citep{Guzzetti_1999_Geomorphology,Zhao2021}, and reflect homogeneously distributed physical property for a given unit \citep{Tanyas2019} . 
+
+In the artilce "Combining class-weighted algorithm and machine learning models in landslide susceptibility mapping: A case study of Wanzhou section of the Three Gorges Reservoir, China" \citep{Zhang2022}, we discussed the class-imbalance problem in landslide susceptibility prediction (LSP), and compared the performance of random forest, logistic regression, LightGBM and their weighted-modes. 
+As a further study, we introduced the deep learning method to the prediction of slope-unit-based landslide susceptibility in this article and compared the impact of deep learning and ensemble learning methods on LSP.
 
 Landslide refers to a natural phenomenon in which the soil or rock mass on the slope slides downwards along the soft surface under the action of gravity or other external forces.
 Landslide is a common geological disaster, causing many economic losses and unfor-tunate casualties, such as devastating soil, vegetation, and dwellings, as well as critically blocking transportation lines and waterways \citep{Abuzied2016JoMS, 2017Chenp147160}.

@@ -593,14 +593,14 @@
   year={2014},
 }
 
-@article{Jr2014TOC,
-  title={The total operating characteristic to measure diagnostic ability for multiple thresholds},
-  author={Jr, Robert Gilmore Pontius and Si, Kangping},
-  journal={International Journal of Geographical Information Science},
-  volume={28},
-  number={3},
-  pages={570-583},
-  year={2014},
+@Article{Jr2014IJoGIS,
+  author  = {Jr, Robert Gilmore Pontius and Si, Kangping},
+  journal = {International Journal of Geographical Information Science},
+  title   = {The total operating characteristic to measure diagnostic ability for multiple thresholds},
+  year    = {2014},
+  number  = {3},
+  pages   = {570-583},
+  volume  = {28},
 }
 
 @article{Mas2013_ROC_Spatial,
@@ -1798,9 +1798,6 @@ DOI = {10.5194/nhess-15-2257-2015}
   author = {Ann and Kocaman and Sultan and Nefeslioglu, Hakan and Gokceoglu, Candan},
 }
 
-@Article{,
-}
-
 @Article{2018Wildep97104,
   author    = {Martina Wilde and Andreas Günther and Paola Reichenbach and Jean-Philippe Malet and Javier Herv{\'{a}}s},
   journal   = {Journal of Maps},
@@ -1913,6 +1910,41 @@ DOI = {10.5194/nhess-15-2257-2015}
   volume    = {19},
   doi       = {10.3390/s19183940},
   publisher = {{MDPI} {AG}},
+}
+
+@Article{Zhang2022,
+  author    = {Huijuan Zhang and Yingxu Song and Shiluo Xu and Yueshun He and Zhiwen Li and Xianyu Yu and Ye Liang and Weicheng Wu and Yue Wang},
+  journal   = {Computers {\&} Geosciences},
+  title     = {Combining a class-weighted algorithm and machine learning models in landslide susceptibility mapping: A case study of Wanzhou section of the Three Gorges Reservoir, China},
+  year      = {2022},
+  month     = {jan},
+  pages     = {104966},
+  volume    = {158},
+  doi       = {10.1016/j.cageo.2021.104966},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Khan2021,
+  author    = {S. Khan and D.B. Kirschbaum and T. Stanley},
+  journal   = {Weather and Climate Extremes},
+  title     = {Investigating the potential of a global precipitation forecast to inform landslide prediction},
+  year      = {2021},
+  month     = {sep},
+  pages     = {100364},
+  volume    = {33},
+  doi       = {10.1016/j.wace.2021.100364},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Zhao2021,
+  author    = {Zhou Zhao and Zeng yuan Liu and Chong Xu},
+  journal   = {Frontiers in Earth Science},
+  title     = {Slope Unit-Based Landslide Susceptibility Mapping Using Certainty Factor, Support Vector Machine, Random Forest, {CF}-{SVM} and {CF}-{RF} Models},
+  year      = {2021},
+  month     = {mar},
+  volume    = {9},
+  doi       = {10.3389/feart.2021.589630},
+  publisher = {Frontiers Media {SA}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

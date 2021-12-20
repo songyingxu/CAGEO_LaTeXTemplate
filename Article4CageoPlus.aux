@@ -14,8 +14,7 @@
 \fi}
 \global\let\hyper@last\relax 
 \gdef\HyperFirstAtBeginDocument#1{#1}
-\providecommand\HyField@AuxAddToFields[1]{}
-\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand*\HyPL@Entry[1]{}
 \orcidauthor{0000-0002-9273-2019}{Yingxu Song}
 \creditauthor{Conceptualization, Methodology, Software, Validation, Investigation, Resources, Funding acquisition}{Yingxu Song}
 \creditauthor{Conceptualization, Validation, Writing-original draft preparation, Writing-review and editing}{Huijuan Zhang}
@@ -26,11 +25,27 @@
 \creditauthor{Funding acquisition}{Ye Liang}
 \creditauthor{Writing-review and editing}{Weicheng Wu}
 \creditauthor{Software}{Yue Wang}
+\HyPL@Entry{0<</P(\376\377\0000)>>}
+\HyPL@Entry{1<</P(\376\377\0000)>>}
+\HyPL@Entry{2<</S/D>>}
+\citation{pourghasemi2018analysis}
+\citation{Song2018,Khan2021}
+\citation{chen2016comparison_LSM_INFORVALUE,Gao2006IV_Wanzhou}
+\citation{Park2013Landslide_LSM_AHP,Kayastha2013Application_LSM_AHP,Pourghasemi2013Landslide_LSM_AHP,Yalcin2008Catena,Yoshimatsu2006}
+\citation{Marjanovi2011Landslide_LSM_SVM}
+\citation{2017Chenp147160,Ayalew2005Geomorphology,Pourghasemi2013landslide_LR_AHP,Solaimani2013LSM_FR_LR,Tsangaratos2016Comparison_LR_Bayas,Ozdemir2013ALSM_FR_WE_LR,Wu2015LSM_LR_FR,Lee2007LSM_FR_LR_ANN,Das2010LSM_LR_RMC}
+\citation{Sevgen2019S,Bui2016Landslides_SVM_ANN_LR}
+\citation{Prakash2020,Ngo2021,Nhu2020,Dao2020,Ghorbanzadeh2019RemoteSensing,Bui2020Catena}
+\citation{Zhao2021}
+\citation{Guzzetti_1999_Geomorphology,Zhao2021}
+\citation{Tanyas2019}
+\citation{Zhang2022}
 \citation{Abuzied2016JoMS,2017Chenp147160}
 \citation{2018Wildep97104}
 \citation{2020Kocamanp118}
 \citation{Yu2016IJERPH,Song2018}
 \citation{Yu2016IJERPH,Song2018}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
 \citation{Fang2020IJoGIS,Guzzetti_1999_Geomorphology,Bui2020Catena}
 \citation{Aditian2018Geomorphology}
 \citation{Barredo2000IJoAEOaG,Yalcin2008Catena}
@@ -44,40 +59,99 @@
 \citation{Breiman2001}
 \citation{Youssef2015Landslides,Kim2017GI}
 \citation{Song2018}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
 \citation{San2014IJoAEOaG}
 \citation{Ada2017NH,Aktas2019C&G}
 \citation{Yu2016IJERPH,Song2018}
 \citation{Song2018}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Study area and data used}{4}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Study area and data used}{5}{section.2}\protected@file@percent }
 \citation{Ayalew2005Geomorphology,Bai2010Geomorphology,Song2018}
 \citation{Ayalew2005Geomorphology,Bai2010Geomorphology}
 \citation{Friedman2002_GBoost}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{5}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Logistic Regression (LR)}{5}{subsection.3.1}\protected@file@percent }
-\newlabel{eqn:gz}{{1}{5}{Logistic Regression (LR)}{equation.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}LightGBM}{5}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Logistic Regression (LR)}{6}{subsection.3.1}\protected@file@percent }
+\newlabel{eqn:gz}{{1}{6}{Logistic Regression (LR)}{equation.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}LightGBM}{6}{subsection.3.2}\protected@file@percent }
 \citation{Breiman2001}
 \citation{Youssef2015Landslides}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Random Forests (RF)}{6}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Class-weighted machine learning models}{6}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Random Forests (RF)}{7}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Class-weighted machine learning models}{7}{subsection.3.4}\protected@file@percent }
 \citation{Jr2014IJoGIS}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Model elevation}{7}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Confusion matrix and ROC curve}{7}{subsubsection.3.5.1}\protected@file@percent }
-\newlabel{eqn:ACC}{{2}{7}{Confusion matrix and ROC curve}{equation.3.2}{}}
-\newlabel{eqn:TPR}{{3}{7}{Confusion matrix and ROC curve}{equation.3.3}{}}
-\newlabel{eqn:TNR}{{4}{7}{Confusion matrix and ROC curve}{equation.3.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Balanced accuracy and G-mean score}{7}{subsubsection.3.5.2}\protected@file@percent }
-\newlabel{eqn:BA}{{5}{7}{Balanced accuracy and G-mean score}{equation.3.5}{}}
-\newlabel{eqn:G_mean}{{6}{7}{Balanced accuracy and G-mean score}{equation.3.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results and discussions}{8}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Multicollinearity Analysis of Landslide Factors}{8}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Landslide susceptibility mapping results}{8}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Implications for landslide-prone Areas}{8}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Validation of landslide susceptibility maps}{9}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{11}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Acknowledgments}{11}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Model elevation}{8}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Confusion matrix and ROC curve}{8}{subsubsection.3.5.1}\protected@file@percent }
+\newlabel{eqn:ACC}{{2}{8}{Confusion matrix and ROC curve}{equation.3.2}{}}
+\newlabel{eqn:TPR}{{3}{8}{Confusion matrix and ROC curve}{equation.3.3}{}}
+\newlabel{eqn:TNR}{{4}{8}{Confusion matrix and ROC curve}{equation.3.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Balanced accuracy and G-mean score}{8}{subsubsection.3.5.2}\protected@file@percent }
+\newlabel{eqn:BA}{{5}{8}{Balanced accuracy and G-mean score}{equation.3.5}{}}
+\newlabel{eqn:G_mean}{{6}{8}{Balanced accuracy and G-mean score}{equation.3.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results and discussions}{9}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Multicollinearity Analysis of Landslide Factors}{9}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Landslide susceptibility mapping results}{9}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Implications for landslide-prone Areas}{9}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Validation of landslide susceptibility maps}{10}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{12}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Acknowledgments}{12}{section.7}\protected@file@percent }
 \bibstyle{cas-model2-names}
 \bibdata{bibliography}
-\csxdef{lastpage}{12}
-\gdef \@abspage@last{14}
+\bibcite{Abuzied2016JoMS}{{1}{2016}{{Abuzied et~al.}}{{Abuzied, Ibrahim, Kaiser and Saleem}}}
+\bibcite{Ada2017NH}{{2}{2017}{{Ada and San}}{{}}}
+\bibcite{Aditian2018Geomorphology}{{3}{2018}{{Aditian et~al.}}{{Aditian, Kubota and Shinohara}}}
+\bibcite{Akgun2012Landslides}{{4}{2012}{{Akgun}}{{}}}
+\bibcite{Aksoy2012Computers&Geosciences}{{5}{2012}{{Aksoy and Ercanoglu}}{{}}}
+\bibcite{Aktas2019C&G}{{6}{2019}{{Aktas and San}}{{}}}
+\bibcite{Althuwaynee2014Landslides}{{7}{2014}{{Althuwaynee et~al.}}{{Althuwaynee, Pradhan, Park and Lee}}}
+\bibcite{Anbalagan2015GeoenvironmentalDisasters}{{8}{2015}{{Anbalagan et~al.}}{{Anbalagan, Kumar, Lakshmanan, Parida and Neethu}}}
+\bibcite{Ayalew2005Geomorphology}{{9}{2005}{{Ayalew and Yamagishi}}{{}}}
+\bibcite{Bai2010Geomorphology}{{10}{2010}{{Bai et~al.}}{{Bai, Wang, Lü, Zhou, Hou and Xu}}}
+\bibcite{Barredo2000IJoAEOaG}{{11}{2000}{{Barredo et~al.}}{{Barredo, Benavides, Herv{\'{a}}s and van Westen}}}
+\bibcite{Breiman2001}{{12}{2001}{{Breiman}}{{}}}
+\bibcite{Bui2020Catena}{{13}{2020}{{Bui et~al.}}{{Bui, Tsangaratos, Nguyen, Liem and Trinh}}}
+\bibcite{Bui2016Landslides_SVM_ANN_LR}{{14}{2016}{{Bui et~al.}}{{Bui, Tuan, Klempe, Pradhan and Revhaug}}}
+\bibcite{chen2016comparison_LSM_INFORVALUE}{{15}{2016}{{Chen et~al.}}{{Chen, Niu and Jia}}}
+\bibcite{2017Chenp147160}{{16}{2017}{{Chen et~al.}}{{Chen, Xie, Wang, Pradhan, Hong, Bui, Duan and Ma}}}
+\bibcite{Dag2020EES}{{17}{2020}{{Da{\u {g}} et~al.}}{{Da{\u {g}}, Akgün, Kaya, Alemda{\u {g}} and Bostanc{\i }}}}
+\bibcite{Dao2020}{{18}{2020}{{Dao et~al.}}{{Dao, Jaafari, Bayat, Mafi-Gholami, Qi, Moayedi, Phong, Ly, Le, Trinh, Luu, Quoc, Thanh and Pham}}}
+\bibcite{Das2010LSM_LR_RMC}{{19}{2010}{{Das et~al.}}{{Das, Sahoo, Westen, Stein and Hack}}}
+\bibcite{Eeckhaut2006Geomorphology}{{20}{2006}{{Eeckhaut et~al.}}{{Eeckhaut, Vanwalleghem, Poesen, Govers, Verstraeten and Vandekerckhove}}}
+\bibcite{Fang2020IJoGIS}{{21}{2020}{{Fang et~al.}}{{Fang, Wang, Peng and Hong}}}
+\bibcite{Friedman2002_GBoost}{{22}{2002}{{Friedman}}{{}}}
+\bibcite{Gao2006IV_Wanzhou}{{23}{2006}{{Gao et~al.}}{{Gao, Cui, Zhao and Wei}}}
+\bibcite{Ghorbanzadeh2019RemoteSensing}{{24}{2019}{{Ghorbanzadeh et~al.}}{{Ghorbanzadeh, Blaschke, Gholamnia, Meena, Tiede and Aryal}}}
+\bibcite{Guzzetti_1999_Geomorphology}{{25}{1999}{{Guzzetti et~al.}}{{Guzzetti, Carrara, Cardinali and Reichenbach}}}
+\bibcite{Hong2020SoTTE}{{26}{2020}{{Hong et~al.}}{{Hong, Liu and Zhu}}}
+\bibcite{Jr2014IJoGIS}{{27}{2014}{{Jr and Si}}{{}}}
+\bibcite{Kayastha2013Application_LSM_AHP}{{28}{2013}{{Kayastha et~al.}}{{Kayastha, Dhital and Smedt}}}
+\bibcite{Khan2021}{{29}{2021}{{Khan et~al.}}{{Khan, Kirschbaum and Stanley}}}
+\bibcite{Kim2017GI}{{30}{2017}{{Kim et~al.}}{{Kim, Lee, Jung and Lee}}}
+\bibcite{2020Kocamanp118}{{31}{2020}{{Kocaman et~al.}}{{Kocaman, Tavus, Nefeslioglu, Karakas and Gokceoglu}}}
+\bibcite{Lee2007LSM_FR_LR_ANN}{{32}{2007}{{Lee et~al.}}{{Lee, Ryu and Kim}}}
+\bibcite{Marjanovi2011Landslide_LSM_SVM}{{33}{2011}{{Marjanović et~al.}}{{Marjanović, Kovačević, Bajat and Voženílek}}}
+\bibcite{Napoli2020Landslides}{{34}{2020}{{Napoli et~al.}}{{Napoli, Carotenuto, Cevasco, Confuorto, Martire, Firpo, Pepe, Raso and Calcaterra}}}
+\bibcite{Ngo2021}{{35}{2021}{{Ngo et~al.}}{{Ngo, Panahi, Khosravi, Ghorbanzadeh, Kariminejad, Cerda and Lee}}}
+\bibcite{Nhu2020}{{36}{2020}{{Nhu et~al.}}{{Nhu, Hoang, Nguyen, Ngo, Bui, Hoa, Samui and Bui}}}
+\bibcite{Ozdemir2013ALSM_FR_WE_LR}{{37}{2013}{{Ozdemir and Altural}}{{}}}
+\bibcite{Park2013Landslide_LSM_AHP}{{38}{2013}{{Park et~al.}}{{Park, Choi, Kim and Kim}}}
+\bibcite{Pourghasemi2013Landslide_LSM_AHP}{{39}{2013a}{{Pourghasemi et~al.}}{{Pourghasemi, H., Moradi, H. and Aghda}}}
+\bibcite{Pourghasemi2013landslide_LR_AHP}{{40}{2013b}{{Pourghasemi et~al.}}{{Pourghasemi, Moradi and Aghda}}}
+\bibcite{pourghasemi2018analysis}{{41}{2018}{{Pourghasemi et~al.}}{{Pourghasemi, Yansari, Panagos and Pradhan}}}
+\bibcite{Prakash2020}{{42}{2020}{{Prakash et~al.}}{{Prakash, Manconi and Loew}}}
+\bibcite{Reichenbach2018ER}{{43}{2018}{{Reichenbach et~al.}}{{Reichenbach, Rossi, Malamud, Mihir and Guzzetti}}}
+\bibcite{Roy2019RemoteSensingApplicationsSocietyandEnvironment}{{44}{2019}{{Roy and Saha}}{{}}}
+\bibcite{Saha2021SoTTE}{{45}{2021}{{Saha et~al.}}{{Saha, Arabameri, Saha, Blaschke, Ngo, Nhu and Band}}}
+\bibcite{San2014IJoAEOaG}{{46}{2014}{{San}}{{}}}
+\bibcite{Sevgen2019S}{{47}{2019}{{Sevgen et~al.}}{{Sevgen, Kocaman, Nefeslioglu and Gokceoglu}}}
+\bibcite{Shahabi2015EnvironmentalEarthSciences}{{48}{2015}{{Shahabi et~al.}}{{Shahabi, Hashim and Ahmad}}}
+\bibcite{Solaimani2013LSM_FR_LR}{{49}{2013}{{Solaimani et~al.}}{{Solaimani, Mousavi and Kavian}}}
+\bibcite{Song2018}{{50}{2018}{{Song et~al.}}{{Song, Niu, Xu, Ye, Peng, Guo, Li and Chen}}}
+\bibcite{Tanyas2019}{{51}{2019}{{Tanyas et~al.}}{{Tanyas, Rossi, Alvioli, van Westen and Marchesini}}}
+\bibcite{Tsangaratos2016Comparison_LR_Bayas}{{52}{2016}{{Tsangaratos and Ilia}}{{}}}
+\bibcite{2018Wildep97104}{{53}{2018}{{Wilde et~al.}}{{Wilde, Günther, Reichenbach, Malet and Herv{\'{a}}s}}}
+\bibcite{Wu2015LSM_LR_FR}{{54}{2015}{{Wu}}{{}}}
+\bibcite{Yalcin2008Catena}{{55}{2008}{{Yalcin}}{{}}}
+\bibcite{Yoshimatsu2006}{{56}{2006}{{Yoshimatsu and Abe}}{{}}}
+\bibcite{Youssef2015Landslides}{{57}{2015}{{Youssef et~al.}}{{Youssef, Pourghasemi, Pourtaghi and Al-Katheeri}}}
+\bibcite{Yu2016IJERPH}{{58}{2016}{{Yu et~al.}}{{Yu, Wang, Niu and Hu}}}
+\bibcite{Zhang2022}{{59}{2022}{{Zhang et~al.}}{{Zhang, Song, Xu, He, Li, Yu, Liang, Wu and Wang}}}
+\bibcite{Zhao2021}{{60}{2021}{{Zhao et~al.}}{{Zhao, yuan Liu and Xu}}}
+\csxdef{lastpage}{16}
+\gdef \@abspage@last{18}
