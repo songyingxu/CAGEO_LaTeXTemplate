@@ -1,10 +1,11 @@
-In this article, we discussed slope-unit-based landslide
-This study aims to investigate the application of the class-weighted algorithm combined with traditional machine learning (logistic regression) and ensemble machine learning models (LightGBM and random forest) to the landslide susceptibility evaluation.
-Wanzhou section of the Three Gorges Reservoir area, China, which have numerous landslides and the number of landslide samples is 19 times more than non-landslide samples, is chosen as an example.
-The class-weighted algorithm focuses on the class-imbalanced problem of landslide and non-landslide samples in the assessment of landslide susceptibility and can turn the class-imbalanced issue into a cost-sensitive problem by setting unequal weights for different classes, which contribute to improving landslide susceptibility evaluation accuracy.
-The landslide inventory database was produced by field investigation and remote sensing images derived from Google Earth.
-Of the 233 landslides in the inventory, 40\% were used for validation, and the remaining 60\% were used for training purposes.
-Twelve environmental parameters (elevation, slope, aspect, curvature, distance to river, NDVI, NDWI, rainfall, seismic intensity, land use, TRI, lithology) were treated as inputs of the models to produce landslide susceptibility map (LSM). The AUC value, Balanced accuracy, and Geometric mean score were utilized to estimate the quality of models.
-The results showed that the weighted models (weighted logistic regression, weighted LightGBM, weighted random forest) have higher AUC values, Balanced accuracy, and Geometric mean scores than those of unweighted methods, which demonstrated that the weighted models exhibit better than unweighted methods, with the weighted random forest method having the best performance.
-The landslide susceptibility map of the Wanzhou section display that the high and very high landslide susceptibility are mainly distributed on both sides of the river.
-The insights from this research will be useful for ameliorating the landslide susceptibility mapping and the development of prevention and mitigation Wanzhou section.
+In this article, we discussed the applicability of deep learning methods and ensemble learning methods in slope-unit-based landslide susceptibility prediction (LSP).
+For this purpose, we presents a case study in Wanzhou section of the Three Gorges Reservoir area, China, and chooses slope units as the basic mapping units.
+Three deep learning models, that is long short-term memory (LSTM), recurrent neural network (RNN), and gate recurrent unit (GRU), and a ensemble learning model (LightGBM) were used to carry out LSP.
+Firstly, 29 landslide factors and 1,909 slope unit generated from a digital elevation model (DEM) were selected as the input data of the study.
+Of the 1,909 slope units in the inventory, 40\% were used for validation, and the remaining 60\% were used for training purposes.
+Then, LSP was carried out using the above five models, respectively.
+Next, the area under the curve (AUC) and landslide prediction index (LPI) were used to validate performance and accuracy of the models.
+In each landslide susceptibility map, the LPI were classed as having very high landslide susceptibility, followed by the high, moderate, low and very low landslide susceptibility classes, respectively.
+Unexpectedly, the performance of deep learning models is weaker than ensemble learning models.
+The AUC of the LSTM, RNN, GRU and LightGBM is 0.723, 0.731, 0.762, 0.915, respectively.
+Therefore, the deep learning model is not applicable in this situation, which also provides a new perspective for the prediction of landslide susceptibility in other regions.

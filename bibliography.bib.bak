@@ -1,5 +1,3 @@
-% Encoding: UTF-8
-
 @Article{2017Chenp147160,
   author  = {Chen, Wei and Xie, Xiaoshen and Wang, Jiale and Pradhan, Biswajeet and Hong, Haoyuan and Bui, Dieu Tien and Duan, Zhao and Ma, Jianquan},
   journal = {Catena},
@@ -730,6 +728,7 @@
   pages   = {181-216},
   volume  = {31},
 }
+
 @Article{Breiman2001,
   author   = {Breiman, Leo},
   title    = {Random Forests},
@@ -1757,6 +1756,7 @@ DOI = {10.5194/nhess-15-2257-2015}
   year={2004},
   publisher={Elsevier}
 }
+
 @Article{Fang2020IJoGIS,
   author    = {Zhice Fang and Yi Wang and Ling Peng and Haoyuan Hong},
   journal   = {International Journal of Geographical Information Science},
@@ -1945,6 +1945,96 @@ DOI = {10.5194/nhess-15-2257-2015}
   volume    = {9},
   doi       = {10.3389/feart.2021.589630},
   publisher = {Frontiers Media {SA}},
+}
+
+@Article{Tanyas2019,
+  author    = {Hakan Tanyas and Mauro Rossi and Massimiliano Alvioli and Cees J. van Westen and Ivan Marchesini},
+  journal   = {Geomorphology},
+  title     = {A global slope unit-based method for the near real-time prediction of earthquake-induced landslides},
+  year      = {2019},
+  month     = {feb},
+  pages     = {126--146},
+  volume    = {327},
+  doi       = {10.1016/j.geomorph.2018.10.022},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{ke2017lightgbm,
+  author  = {Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  journal = {Advances in neural information processing systems},
+  title   = {Lightgbm: A highly efficient gradient boosting decision tree},
+  year    = {2017},
+  pages   = {3146--3154},
+  volume  = {30},
+}
+
+@Article{Gao2021,
+  author    = {Han Gao and Pei Shan Fam and Lea Tien Tay and Heng Chin Low},
+  journal   = {Disaster Advances},
+  title     = {Landslide Susceptibility Analysis using Gradient Boosting Models: A Case Study in Penang Island, Malaysia},
+  year      = {2021},
+  month     = {jul},
+  pages     = {22--37},
+  doi       = {10.25303/148da2221},
+  publisher = {World Researchers Associations},
+}
+
+@Article{Wang2020,
+  author    = {Yi Wang and Zhice Fang and Mao Wang and Ling Peng and Haoyuan Hong},
+  journal   = {Computers {\&} Geosciences},
+  title     = {Comparative study of landslide susceptibility mapping with different recurrent neural networks},
+  year      = {2020},
+  month     = {may},
+  pages     = {104445},
+  volume    = {138},
+  doi       = {10.1016/j.cageo.2020.104445},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Yu2021SR,
+  author    = {Xianyu Yu and Kaixiang Zhang and Yingxu Song and Weiwei Jiang and Jianguo Zhou},
+  journal   = {Scientific Reports},
+  title     = {Study on landslide susceptibility mapping based on rock{\textendash}soil characteristic factors},
+  year      = {2021},
+  month     = {jul},
+  number    = {1},
+  volume    = {11},
+  doi       = {10.1038/s41598-021-94936-5},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@PhdThesis{宋英旭2020博士论文,
+  author = {宋英旭},
+  school = {中国地质大学},
+  title  = {基于空天地一体化监测的滑坡风险动态评价研究},
+  year   = {2020},
+}
+
+@Article{,
+}
+
+@Article{,
+}
+
+@Article{,
+}
+
+@Article{,
+}
+
+@Article{,
+}
+
+@Article{Wang_2019,
+  author    = {Yi Wang and Zhice Fang and Haoyuan Hong},
+  journal   = {Science of The Total Environment},
+  title     = {Comparison of convolutional neural networks for landslide susceptibility mapping in Yanshan County, China},
+  year      = {2019},
+  month     = {may},
+  pages     = {975--993},
+  volume    = {666},
+  doi       = {10.1016/j.scitotenv.2019.02.263},
+  publisher = {Elsevier {BV}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

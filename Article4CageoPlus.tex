@@ -111,16 +111,17 @@ auid=000,bioid=1,orcid=0000-0002-9273-2019]
 
 
 \begin{abstract}
-In this article, we discussed slope-unit-based landslide
-This study aims to investigate the application of the class-weighted algorithm combined with traditional machine learning (logistic regression) and ensemble machine learning models (LightGBM and random forest) to the landslide susceptibility evaluation. 
-Wanzhou section of the Three Gorges Reservoir area, China, which have numerous landslides and the number of landslide samples is 19 times more than non-landslide samples, is chosen as an example. 
-The class-weighted algorithm focuses on the class-imbalanced problem of landslide and non-landslide samples in the assessment of landslide susceptibility and can turn the class-imbalanced issue into a cost-sensitive problem by setting unequal weights for different classes, which contribute to improving landslide susceptibility evaluation accuracy.   
-The landslide inventory database was produced by field investigation and remote sensing images derived from Google Earth. 
-Of the 233 landslides in the inventory, 40\% were used for validation, and the remaining 60\% were used for training purposes. 
-Twelve environmental parameters (elevation, slope, aspect, curvature, distance to river, NDVI, NDWI, rainfall, seismic intensity, land use, TRI, lithology) were treated as inputs of the models to produce landslide susceptibility map (LSM). The AUC value, Balanced accuracy, and Geometric mean score were utilized to estimate the quality of models. 
-The results showed that the weighted models (weighted logistic regression, weighted LightGBM, weighted random forest) have higher AUC values, Balanced accuracy, and Geometric mean scores than those of unweighted methods, which demonstrated that the weighted models exhibit better than unweighted methods, with the weighted random forest method having the best performance. 
-The landslide susceptibility map of the Wanzhou section display that the high and very high landslide susceptibility are mainly distributed on both sides of the river. 
-The insights from this research will be useful for ameliorating the landslide susceptibility mapping and the development of prevention and mitigation Wanzhou section. 
+In this article, we discussed the applicability of deep learning methods and ensemble learning methods in slope-unit-based landslide susceptibility prediction (LSP).
+For this purpose, we presents a case study in Wanzhou section of the Three Gorges Reservoir area, China, and chooses slope units as the basic mapping units.
+Three deep learning models, that is long short-term memory (LSTM), recurrent neural network (RNN), and gate recurrent unit (GRU), and a ensemble learning model (LightGBM) were used to carry out LSP.
+Firstly, 29 landslide factors and 1,909 slope unit generated from a digital elevation model (DEM) were selected as the input data of the study.
+Of the 1,909 slope units in the inventory, 40\% were used for validation, and the remaining 60\% were used for training purposes. 
+Then, LSP was carried out using the above five models, respectively.
+Next, the area under the curve (AUC) and landslide prediction index (LPI) were used to validate performance and accuracy of the models.
+In each landslide susceptibility map, the LPI were classed as having very high landslide susceptibility, followed by the high, moderate, low and very low landslide susceptibility classes, respectively.
+Unexpectedly, the performance of deep learning models is weaker than ensemble learning models. 
+The AUC of the LSTM, RNN, GRU and LightGBM is 0.723, 0.731, 0.762, 0.915, respectively. 
+Therefore, the deep learning model is not applicable in this situation, which also provides a new perspective for the prediction of landslide susceptibility in other regions.
 \end{abstract}
  
 \begin{coverletter}
@@ -155,13 +156,13 @@ Jiangxi Engineering Laboratory on Radioactive Geoscience and Big Data Technology
 
  
 \begin{highlights}
-\item This study shows that deep learning methods worse than ensemble learning methods, which has certain enlightenment significance for the selection of methods in the evaluation of landslide susceptibility when the landslide samples are not large.
+\item This study shows that deep learning methods worse than ensemble learning methods, which has certain enlightenment significance for the selection of methods in the evaluation of landslide susceptibility when the landslide samples are not enough.
 \item The AutoML tools were used to train the best ensemble machine learning model, which could reduce unnecessary manual operations, and the LightGBM method was better than the others.
 \item The ensemble models are much more applicable for slope-unit-based landslide susceptibility prediction than deep learning models.
 \end{highlights}
 
 \begin{keywords}
-landslide susceptibility prediction\sep deeplearning \sep slope-unit-based \sep ensemble learning \sep Three Gorges Reservoir area
+landslide susceptibility prediction\sep deep learning \sep slope-unit-based \sep ensemble learning \sep Three Gorges Reservoir area
 \end{keywords}
 
 \maketitle 
@@ -169,7 +170,6 @@ landslide susceptibility prediction\sep deeplearning \sep slope-unit-based \sep 
 \printcredits
 
 \doublespacing
-
 
 \section{Introduction}
 Landslide is one of the major geological hazards, which often causes heavy damage, leading to huge economic losses and casualties. 
@@ -212,14 +212,6 @@ LigthGBM is a new member of the boosting ensemble models, having faster training
 The choice of samples seriously affects the accuracy of the machine learning models. 
 Some researchers have paid attention to the sample selection in the evaluation of landslide susceptibility, polygon-based random sampling (PBRS) \citep{San2014IJoAEOaG}, two-level random sampling (2LRS) \citep{Ada2017NH, Aktas2019C&G} were used to produce more realistic landslide susceptibility maps.
 
-However, the area of the landslide area is often much smaller than that of the non-landslide area. 
-Selecting the same amount of samples under different categories will often result in underrepresentation of non-landslide samples, waste of non-landslide samples and loss of important information, lead to poor performance in landslide susceptibility evaluation models.
-
-The class-weighted algorithm treats the susceptibility assessment as a cost-sensitive issue and sets different misclassification weights for different categories (landslides, non-landslides). 
-This method has been widely used to solve the unbalanced variety, but the application to landslide susceptibility assessment is still relatively few.
-
-
-
 Wanzhou district of Chongqing is in the Three Gorges Reservoir area's hinterland, playing a significant role in the prevention and domination of geological disasters in the Three Gorges Reservoir area. 
 In recent decades, because of the abundant precipitation and cyclical fluctuation of water level in the Yangtze River, landslides and other geological disasters in this area have increased significantly, seriously destroying the ecological environment and socially sustainable development. 
 In this study, the Wanzhou section of Three Gorges Reservoir was selected as the research area, and the class-weighted algorithm combined with traditional machine learning model (Logistic regression) and ensemble machine learning models (LightGBM and random forest) were applied to the landslide susceptibility evaluation. 
@@ -228,130 +220,107 @@ Different from previous work, the novelty of this paper are 1) the class-weighte
 
 \section{Study area and data used}
 
-Wanzhou District belonging to Chongqing Municipality, is in the hinterland of the Three Gorges Reservoir area. 
-The terrain of Wanzhou District is mostly mountains and hills, with large topographic fluctuations which is largely attributed to its location at the eastern margin of East Sichuan Fold belt. 
-Additionally, the study area is located in the Yangtze River Valley, and the floodplain landform is widely developed, forming a typical river terrace landform. The existence of river terraces and low mountain hills makes the area widely developed with various slopes, which is more conducive to the occurrence of landslide disasters.
-The study area with 223 historical landslides (Figure 1a) is the bank section of Wanzhou District, having many rivers and streams of the Yangtze River system \citep{Yu2016IJERPH,Song2018}. 
-Wanzhou District is in the subtropical monsoon region with plentiful precipitation. 
-The rainfall is mainly concentrated from May to September, which accounts for about 60\% of the annual rainfall, triggering abundant landslides. 
-The rivers and streams in Wanzhou District have deep cuts, large drops, and branch-like distribution, all of which belong to the Yangtze River system. 
-The rivers in the territory with a drainage area of more than 100 $km^{2}$ include the Zhuxi River, Duhe River, Shiqiao River, Ruxi River, and Puli River in northern of the Yangtze River, and Nixi River, Wuqiao River and Xintian River in southern of the Yangtze River. 
-Wanzhou District is located in the northwest edge of the Sichuan-Hubei-Hunan uplift fold belt of the first-class structure of the Neocathaysian system, mainly including Changliangzi anticline and its syncline, Yushan anticline, Qiyaoshan anticline and Hengshixi anticline in the East. 
-A number of tectonic fissures are distributed in NNE or NE direction. There are Triassic, Jurassic and Quaternary strata (including alluvial deposits and slope deposits, etc.) in the study area \citep{Song2018}. 
-The lithology is relatively complicated, and the particles can be divided into shale and sand-mudstone interbedded, mudstone, siltstone, sandstone, red clastic rock according to the material composition. 
-The lithology is characterized by soft and hard phases, low mechanical strength, and obvious differential weathering, which provides favorable materials for the landslides. 
-Wanzhou District is subordinate to the weak seismic zone in southern China, and thus lacks any notable threat of earthquakes to local geo-hazards. 
-The combination of the above natural environmental characteristics and human influences (such as accelerating engineering construction and increasing population) leads to some geo-hazards in Wanzhou District, especially landslides. 
-The landslide data mainly come from landslide geological surveys and the remote sensing images provided by Google Earth. 
-The DEM data with 30 $\times$ 30 m resolution derived from Aster GDEM. 
-A Landsat-8 satellite image which was acquired on 2013-08-12 were utilized as primary remote sensing data. 
-Table 1 shows the types and sources of data in this study. 
-A total of 12 landslide contributing factors and the types of data were shown in Table 2. 
-Figure 3 shows the distributions of twelve landslide factors. 
-Elevation, slope, aspect, curvature, and topographic roughness index (TRI) were derived from the DEM data using the ArcGIS and QGIS. The lithological data and the distance to the river were vectorized from the geological and topographic maps. 
-The NDVI/NDWI data were acquired from the Landslide 8 OLI images. 
-The rainfall data were provided by the Meteorological Bureau. 
-The land-use data came from the geological survey and the Landslide 8 OLI images.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs_rev1/Fig_StudyArea.pdf}
+    \caption{Study Area. (a)Three Gorges Reservoir area;(b)Wanzhou district;(c)Slope units of study area. Image modified from \cite{Zhang2022}.}
+    \label{fig:Figure1}
+\end{figure}
+
+\subsection{Study area}
+Wanzhou District is located in middle of the Three Gorges Reservoir area, between $107^\circ 55^\prime 22^{\prime \prime}$ - $108^\circ 53^\prime 25^{\prime \prime}$ E and $30^\circ 24^\prime 25^{\prime \prime}$ - $31^\circ 14^\prime 58^{\prime \prime}$ N \citep{Song2018}.
+This area has a subtropical humid monsoon climate, with an annual average temperature $17.7^\circ$C and annual precipitation of 1,243 mm.
+The study area belongs to the bank section of Wanzhou District, in which the Yangtze River and its tributaries rush \citep{Zhang2022}.
+The entire study area is divided into 1,909 slope units, of which 416 are landslide samples, and the rest are non-landslide samples (Fig. \ref{fig:Figure1}).
+According to the Digital Elevation Model (DEM) data, the elevation of the study area varies from 21 m to 1,015 m.
+Geologically, the lithology is characterized by soft and hard phases, low mechanical strength, and obvious differential weathering, providing favorable environment for the landslides \citep{Zhang2022}.
+Tectonically, Wanzhou District is located in the northwest edge of the Sichuan-Hubei-Hunan uplift fold belt, and a lot of tectonic chasms are distributed in NNE or NE direction \citep{Zhang2022}.
+Due to these complex geological and climate conditions, the study area has become a famous region for LSP of the Three Gorges Reservoir area. 
+
+\subsection{Data sources}
+
+The data sources used in this study included: 1) $30 \time 30$ m resolution DEM of Aster GDEM; 2) Landsat-8 OLI remote sensing images and Google Earth images; 3) geological maps of 1: 50,000 scale; 4) existing reports and landslide geological survey data; 5) Land use and land cover (LULC) data.
+More detailed data can be found from the article of \cite{Zhang2022}.
+
+Slope units could reflect the actual environmental conditions better than grid units, and have definite geological significance \citep{Zhao2021}. 
+In this study, we used the hydrological analysis module of ArcGIS to produce the slope units from DEM data. 
+Finally, 1,909 slope units were extracted, of which 416 were landslide samples.
+
+A total of 12 landslide factors are used in this article, including slope, aspect, terrain curvature, elevation, rainfall, terrain roughness index (TRI), seismic intensity, distance to the river, lithology, NDVI, NDWI, LULC, etc.
+A detailed description of these factors can be found in the article of \cite{Zhang2022}.
+
 
 \section{Methodology}
 
-The flowchart of landslide susceptibility mappingfor the study area is shown as in Fig. 4. 
-Firstly, twelve landslide contributing factors and landslide samples were selected as independent variables and dependent variables, respectively, to form an initial decision table for training the models. 
-Not all the landslide contributing factors are indispensable for the landslide susceptibility assessment (Dou et al., 2015). 
-Therefore, multicollinearity analysis of landslide contributing factors is essential for improving the robustness of the models. 
-In this study, the variance inflation factor method (VIF) was utilized to carry out multicollinearity analysis of landslide conditioning factors. 
-Secondly, a so-called "Pipeline" strategy was used to connect data processing and classifiers. 
-The disposing of data includes factor-normalization and factor-reduction in which the StandardScaler function and PCA method provided by Sklearn were implemented (Pedregosa et al., 2011). 
-The purpose of employing "Pipeline" is to ensure the consistency of the data preprocessing in the training set and test set. 
-Thirdly, the traditional machine learning (logistic regression) and ensemble machine learning models (LightGBM and random forest) were applied to achieve the landslide susceptibility mapping. 
-Finally, several evaluation indicators (e.g., AUC value, balanced accuracy, and geometric mean score) were implemented to evaluate the LSM models.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.65\textwidth]{figs_rev1/Fig_Workflow.png}
+    \caption{Flowchart of the study.}
+    \label{fig:Workflow}
+\end{figure}
+
+The flowchart of landslide susceptibility prediction for the study area is shown as in Fig. \ref{fig:Workflow}. 
+To convert some grid-unit-based landsldie factors (slope, aspect, elevation, etc.) into slope unit, we used the regional statistical tools supported by ArcGIS. 
 
 
-\subsection{Logistic Regression (LR)}
+The factor normalization method is used to eliminate the influence of landslide factor dimension.
+The principal component analysis (PCA) method was used for factor dimensionality reduction.
+The variance inflation factor (VIF) method was used to carry out multicollinearity analysis of landslide conditioning factors.
 
-Logistic regression (LR) is a classic machine learning model with the capacity to settle classification problems \citep{Ayalew2005Geomorphology,Bai2010Geomorphology,Song2018}. 
-It is widely used in landslide susceptibility evaluation because of its simplicity, parallelization, and strong interpretability. 
-Logistic regression can be treated as a variant of linear regression, and the variables of the LR model could be continuous or discrete \citep{Ayalew2005Geomorphology,Bai2010Geomorphology}. 
-The core concept of logistic regression is to map the domain's value from (-$\infty$, +$\infty$) to (0,1). 
-0 and 1 represent different categories, respectively. 
-They represent non-landslides (0) and landslides (1) in the landslide susceptibility evaluation. 
-A Sigmoid function is employed to express this mapping relationship, as shown below (Equation \ref{eqn:gz}).
+To compare the performance of deep learning and ensemble learning in LSP, we used RNN, LSTM, GRU, and AutoML methods to carry out LSP, respectively.
+The AutoML was used to find the best model from several ensemble learning models (Adaboost, Xgboost, LightGBM, random forest) quickly and automatically.
+ROC/AUC/LPI were used to evaluate the performance of the models.
 
-\begin{equation}
-  g(z)=\frac{1}{1+e^{-z}}
-  \label{eqn:gz}
-\end{equation}
+\subsection{Recurrent neural network (RNN)}
 
-\subsection{LightGBM}
+Recurrent neural network (RNN) is a neural network used to process sequence data. 
+Compared with the general neural network, it can process the data of the sequence change. 
+Every unit is associated with other units in the hidden layer at different time intervals in the RNN method \citep{Wang2020}.
+For example, a word will have different meanings because of the different content mentioned above, and RNN can solve this kind of problem well.
 
-LightGBM is a new gradient boosting framework proposed by Microsoft \citep{Friedman2002_GBoost}. 
-LightGBM belongs to the Boosting family in ensemble learning and relies on decision tree algorithms. 
-LightGBM is widely used for classification tasks and machine learning competitions because of its higher efficiency and lower memory usage than other gradient boosting frameworks (e.g., Adaboost, GBDT, etc.). 
-The application of LightGBM addresses the problems encountered by GBDT in massive data and en-sures the better performance of GBDT in industrial practice.
+\subsection{Long short-term memory neural network (LSTM)}
 
-\subsection{Random Forests (RF)}
+Long Short-Term Memory Neural Network (LSTM) belongs to a special recurrent neural network (RNN).
+The RNN has a directional loop in the hidden layer, and inputs the information in the previous hidden layer to the current hidden layer. 
+There is a certain connection between the input data at different time points, rather than being separated from each other. 
+But for relatively long sequences, RNN still has the problem of gradient disappearance. 
+To solve this problem, LSTM uses a gating mechanism to control the state of the information flow. 
+There are three types of gating units in the memory block, which are memory gate, forget gate and output gate. 
+The memory gate selectively retains important key information, the forget gate filters unimportant or interference information, and the output gate selects the information output externally.
 
-The RF method belongs to the Bootstrap aggregation, a basic ensemble learning model \citep{Breiman2001}. 
-Random forests have a simple implementation, low computational overhead, and robust performance in many machine learning tasks. 
-The diversity of Bagging basic learners comes from sample perturbations and attributes perturbations, further improving the generalization performance of the final integration \citep{Youssef2015Landslides}. 
+\subsection{Gate recurrent unit (GRU)}
 
-\subsection{Class-weighted machine learning models}
+GRU (Gate Recurrent Unit) is a type of RNN, too. 
+Like LSTM, it is also proposed to solve the problems of long-term memory and the disappearance of gradients in backpropagation.
+Compared with LSTM, the use of GRU can achieve considerable results, and is easier to train in comparison, which can greatly improve the training efficiency, so it is more inclined to use GRU in many cases.
 
-When the samples of landslide and non-landslide are equal or similar, the machine learning will have excellent performance. 
-Otherwise, the process of machine learning will be seriously affected by imbalanced samples. 
-The imbalance of categories may cause the predictive results to be biased towards the side with more sample categories: the non-landslide area. 
-If the landslide area is predicted as a non-landslide area, the accuracy and practicability of the landslide sensitivity evaluation result will be low. 
-For example, there are 98 negative examples (non-landslides) but only 2 positive examples (landslides). 
-The learning model only requires returning a learner that always predicts new samples as negative examples, which can achieve 98\% accuracy. 
-However, such learners are worthless because they cannot predict any positive cases.
-The class-imbalanced problem can be solved by oversampling positive samples (landslides), undersampling negative samples (assuming the non-landslide is the majority class) or treating the machine learning process as a cost-sensitive learning problem. 
-The representative oversampling methods are the SMOTE and Borderline-SMOTE, while the representative undersampling technique is the EasyEnsemble method (Verbiest et al., 2014). 
-The oversampling method's time overhead is usually more than that of the undersampling method because the former method adds many positive examples and makes the classifier training set much larger than the initial training set. 
-Moreover, the oversampling method cannot simply repeat the initial the sampling of the initial positive samples, leading to serious overfitting. 
-Although the undersampling method can reduce time overhead by randomly discarding the negative examples, some critical information might be lost during this process. 
-When viewed as a cost-sensitive issue, the class-imbalanced problem could be well solved because a so-called cost matrix used in the machine learning process can set the weights corresponding to different categories for improving the accuracy of classification. 
-The class-weighted machine learning methods used in this article belong to this category.
-In this study, the entire study area was resampled into 553,172 non-landslide samples and 29,313 landslide samples. 
-The ratio of non-landslide samples to landslide samples was approximately 19:1. 
-Therefore, the LSM process in this study should be regarded as a typical class-imbalanced problem. 
-Table 3 shows the cost matrix used in this study.
+\subsection{Auto Machine Learning (AutoML) and LightGBM}
+
+Auto Machine Learning (AutoML) was used to select the best ensemble learning models in this article.
+AutoML is the end-to-end process automation of applying machine learning to real-world problems.
+Starting from the traditional machine learning model, AutoML realizes automation from three aspects: feature engineering, model construction, and hyperparameter optimization, to propose an end-to-end solution.
+In this article, we used Microsoft's open source AutoML library -- flaml to select the best ensemble machine learning model from LightGBM, Xgboost, Adaboost, random forest, and finally LightGBM was selected.
+
+
+The main idea of ensemble learning is to combine multiple weak classifiers (decision tree for LightGBM) to form a strong classifier \citep{Song2018}. 
+LightGBM is an improved version of gradient boosting decision tree (GBDT) algorithm proposed by Microsoft \citep{ke2017lightgbm}. 
+LightGBM uses a leaf-wise leaf growth strategy with max depth limitation and a histogram-based algorithm to speed up the training process and reduce memory consumption \citep{Gao2021}. 
+Therefore, lightgbm has been widely used in processing real world data, which has also been applied to LSP\citep{Song2018,Zhang2022}.
 
 \subsection{Model elevation}
-\subsubsection{Confusion matrix and ROC curve}
+\subsubsection{ROC curve and AUC}
 
-The confusion matrix is comprised of the following four indexes: true positive (TP), false positive (FP), true negative (TN), and false negative (FN). 
-Various statistical indicators, including accuracy (Equation \ref{eqn:ACC}), TPR/recall (Equation \ref{eqn:TPR}), TNR (Equation \ref{eqn:TNR}), ROC curve (Receiver Operating Characteristic), and AUC (area under ROC curve), could be calculated through the above four indexes. 
-These indicators are usually employed to evaluate the performance of machine learning tasks, consisting of land-use classification \citep{Jr2014IJoGIS}, LSM, etc.
+The receiver operator curve (ROC) and the area under the curve (AUC) are widely utilized in evaluating the overall performance of the LSP models \citep{Zhao2021, Gao2021}.
+It is a probability curve to show the ability of the classifier to rank the positive samples relative to the negative samples \citep{Gao2021}.
+The value of the area under the ROC curve (AUC) is a commonly used indicator to measure the prediction performance, measuring how much the models can distinguish between different classes. 
+A higher AUC value always means better model performance \citep{Song2018, Gao2021}.
 
-\begin{equation}
-  \text { Accuracy }=\frac{T P+T N}{T P+F P+T N+F N}
-  \label{eqn:ACC}
-\end{equation}
 
-\begin{equation}
-  T P R=\text { Sensitivity }=\text { Recall }=\frac{T P}{T P+F N}
-  \label{eqn:TPR}
-\end{equation}
+\subsubsection{Landslide prediction index (LPI)}
 
-\begin{equation}
-  T N R=\text { Specificity }=\frac{T N}{T N+F P}
-  \label{eqn:TNR}
-\end{equation}
-
-\subsubsection{Balanced accuracy and G-mean score}
-
-In the cost sensitivity problem, the ROC curve cannot directly reflect the models' pros and cons. 
-Thus, we used balanced accuracy and G-mean score provided by Sklearn (Pedregosa et al., 2011) as the evaluation indexes. The balanced accuracy (Equation \ref{eqn:BA}) in classification problems is defined as the average recall (TPR) obtained under each class, and the G-mean (Equation \ref{eqn:G_mean}) is the root of the product of TPR and TNR. 
-
-\begin{equation}
-  \text { Balanced Accuracy }=\frac{T P R+T N R}{2}
-  \label{eqn:BA}
-\end{equation}
-
-\begin{equation}
-  G-\text { mean }=\sqrt{T P R * T N R}
-  \label{eqn:G_mean}
-\end{equation}
+By applying the models to the study area, the machine learning models can give the probability of landslide occuring in each slope unit. 
+The probability values of the LSP models range from 0 to 1, which are the so-called landslide prediction index values (LPI). 
+To get the landslide susceptibility map of each models, the LPI were reclassified as very high, high, moderate, low and very low landslide susceptibility classes with the Natural Breaks method supported by the ArcGIS software. 
 
 \section{Results and discussions}
 \subsection{Multicollinearity Analysis of Landslide Factors}
@@ -380,16 +349,28 @@ The percentages of very low and low classes in LR, LightGBM, and RF cases are hi
 
 The regions with the high and very high landslide susceptibility are mainly distributed on both sides of the river (Figure 5), most likely related to the water level. Wanzhou reservoir area is the hinterland of the Three Gorges Reservoir area with the frequently variable water level. The rising water level of the Yangtze River can lead to the decrease of shear strength of the sliding body through softening and silting the slope (Wang and Qiao, 2013; Gui et al., 2016). In contrast, the drop in the water level produces a much larger hydrodynamic pressure, which increases the sliding force along the direction of underground seepage and then brings about the landslides (Wang and Qiao, 2013; Gui et al., 2016). There is the highest landslide susceptibility at the middle and lower reaches of the river (Figure 5). In addition to lithology, rainfall, and vegetation, the type of land-use is also probably to account for this characteristic. The strata exposed in the Wanzhou reservoir area are mainly Jurassic Shaximiao Formation (J2s) and Suining Formation (J3s) (Zhu et al., 2013). The lithology is off-white feldspathic quartz sand-stone intercalated with purplish-red argillaceous siltstone, purplish-red sandstone, and mudstone. It is easy to form a soft top and hard bottom structural surface because of the difference in weathering speed of mudstone and sandstone, providing an effective structure for the loose accumulation material sliding along the bedrock surface. Wan-zhou District is the center of a rainstorm in eastern Chongqing. According to the Datankou hydrological station's statistics, the average annual precipitation is 1243mm, and the maximum annual rainfall is about 1550mm (Yu et al., 2016; Song et al., 2018). The rainstorm strongly scours the landslide soil, infiltrate into cracks and potential sliding surfaces, resulting in the aggravation of landslide deformation. On the other hand, the rainfall will increase the slope's self-weight, thereby increasing the sliding force of the hill. Therefore, the combination of pore water pressure and soil softening can increase the probability of landslides (Finlay et al., 1997; Dahal et al., 2008). The plant roots have a powerful tensile effect on improving the anti-sliding ability of rock and soil, which anchor the loose weathered layer to the more stable rock and soil layer to prevent them from sliding along the slope. The plant stems and leaves, and litters can intercept and absorbing rainwater, which plays an inhibitory role in slope runoff and rain erosion (Sittadewi and Tejakusuma, 2019). However, the vegetation coverage of the research area is low, having a weak ability to resist landslides. The primary type of land-use in this area is wetland filled with groundwater, which is one of the significant external factors inducing landslide. Groundwater will sharply increase the weight of the rock and soil and reduce the anti-sliding resistance, which leads to the increase of sliding force and slope instability, resulting in landslides. Hence, LSM can be applied to land-use planning and in the prioritizing the management of countermeasures to mitigate potential losses by landslides and also helps the government formulate relevant scien-tific policies according to different susceptibility levels as a means of mitigating land-slides. Moreover, a LSM could also be used to raise public awareness of landslides and then reduce related activities in hazardous areas.
 
-\section{Validation of landslide susceptibility maps}
+\section{Validation of LSP}
 
-The ROC curves of the six models are shown in Figure 7. The AUC values of the six models are 83.5%, 83.9%, 89%, 88.8%, 84.4%and 91.3%, respectively, indicating that all the six models are suitable for LSM in this region. Based on the ROC curves results, the weighted methods are generally better than the unweighted methods (except the LightGBM/WLightGBM), and the WRF model with the highest AUC value (AUC = 91.3%) is probably considered to be the most appropriate model.
-The ROC curve cannot evaluate the models' performance perfectly because it cannot directly reflect the overall cost expectation of the models in case of unequal costs. Furthermore, the model's ability to predict landslides should be emphasized rather than non-landslides in the landslide susceptibility evaluation. Therefore, we selected more appropriate evaluation indicators to compare the pros and cons of the models. Table 5 shows the Balanced accuracy, G-mean, Recall, Accuracy, and AUC of the six models. The Recall values of the six models are 0.000, 0.774, 0.321, 0.842, 0.150 and 0.821, respectively. The Recall value of the LR model is 0, meaning that it cannot predict landslides. The weighted models (WLR, WLightGBM, WRF) are better than the un-weighted models (LR, LightGBM, RF) in terms of Recall, suggesting that the weighted models have a more powerful ability to predict landslides. The six models have dis-tinctive Accuracy values, with the figures of 0.950, 0.736, 0.952, 0.793, 0.950 and 0.772, respectively. The weighted models (WLR, WLightGBM, WRF) are worse than the unweighted models (LR, LightGBM, RF) in terms of Accuracy values, denoting that the unweighted models have the stronger ability to predict non-landslides. The G-mean values and Balanced accuracy values of the six models are 0.000, 0.774, 0.321, 0.842, 0.150, 0.821 and 0.500, 0.776, 0.550, 0.844, 0.511, 0.823, respectively. The G-mean and Balanced accuracy values imply that the weighted models are better than the unweighted models in LSM when a class-imbalanced problem is viewed as a cost-sensitive issue. In line with the AUC results, the Balanced accuracy and G-mean scores indicate that the WRF model has achieved much better performance than the other weighted models.
-Landslide events not only reduce the financial losses but also cost human lives. A landslide susceptibility map is an essential tool for developing preventive measures in landslide-prone areas. Therefore, many scholars are committed to improving LSM models' performance. Recently, machine learning models and ensemble machine learning models had good performance in LSM. However, few studies have focused on the class-imbalanced problem, which will lead to poor performance in LSM whether the machine learning or ensemble machine learning models are utilized. Thus, we carried out the application of the class-weighted algorithm combined with traditional machine learning (LR) and ensemble machine learning models (LightGBM and RF) to the LSM based on a case study of the Wanzhou section of the Three Gorges Reservoir, China, in the present study. 
-The results proved that the weighted methods (WLR, WLightGBM, WRF) are better than unweighted methods (LR, LightGBM, RF), shown as higher AUC, G-mean, and Balanced Accuracy values generally. Moreover, the WRF model has much better performance than WLR and WLightGBM models. Although the unweighted models have higher Accuracy value, they are incapable of evaluating landslide susceptibility because their accuracy rates come from the prediction of the negative class (non-landslides) rather than the positive class (landslides). A vital advantage of the weighted models is that the class-weighted algorithm turned the susceptibility evalua-tion problem into a cost-sensitive issue by setting unequal weights for different classes, which improves the performance of LSM, manifesting in higher Recall values. On the other hand, the weighted models (WLR/WLightGBM/WRF) tend to divide more high and very high susceptibility areas than the unweighted models (LR/LightGBM/RF) (Fig 5, 6). Landslide susceptibility map is the basis of landslide risk evaluation. Suppose the high susceptibility area is incorrectly classified as a low susceptibility zone, which may lead to a false judgment on the risk of landslides and then result in considerable threats to the safety of human life and property. Furthermore, the weighted models pay more attention to landslide samples' classification accuracy, which is the actual concern in the landslide susceptibility evaluation. Although every study area has its own unique landslide contributing factors and geological conditions, the weighted models proposed in this paper will provide significant clues for the landslide susceptibility evaluation concerning the imbalanced landslide samples. Regardless, the weighted models still have several disadvantages. For instance, the cost matrix should be processed before classiﬁcation using weighted models, which is affected by the processing method and is time-consuming. Moreover, a high-resolution DEM for the study area is not freely available, resulting in the poor performance of weighted models. If high-resolution DEM were utilized for extracting landslide-related parameters, these weighted models could achieve better results. 
+The ROC curves of the six models are shown in Figure 7. 
+The AUC values of RNN, GRU, LSTM, LGBM, Xgboost, Catboost, LR, Extra\_tree are 0.611, 0.744, 0.721, 0.972, 0.943, 0.936, 0.988 respectively. 
+Based on the AUC results, the ensemble learning methods are generally better than the deep learning methods.
+The Extra\_tree model with the highest AUC value (AUC = 0.988) is probably considered to be the best ensemble learning model, and the GRU model (AUC = 0.744) is probably considered to be the best deep learning model.
+Landslide events not only reduce the financial losses but also cost human lives. 
+A landslide susceptibility map is an essential tool for developing preventive measures in landslide-prone areas. Therefore, many scholars are committed to improving LSM models' performance. 
+Recently, machine learning models and ensemble machine learning models had good performance in LSM. 
+However, few studies have focused on the class-imbalanced problem, which will lead to poor performance in LSM whether the machine learning or ensemble machine learning models are utilized. 
+Thus, we carried out the application of the class-weighted algorithm combined with traditional machine learning (LR) and ensemble machine learning models (LightGBM and RF) to the LSM based on a case study of the Wanzhou section of the Three Gorges Reservoir, China, in the present study. 
+The results proved that the weighted methods (WLR, WLightGBM, WRF) are better than unweighted methods (LR, LightGBM, RF), shown as higher AUC, G-mean, and Balanced Accuracy values generally. 
+Moreover, the WRF model has much better performance than WLR and WLightGBM models. Although the unweighted models have higher Accuracy value, they are incapable of evaluating landslide susceptibility because their accuracy rates come from the prediction of the negative class (non-landslides) rather than the positive class (landslides). A vital advantage of the weighted models is that the class-weighted algorithm turned the susceptibility evalua-tion problem into a cost-sensitive issue by setting unequal weights for different classes, which improves the performance of LSM, manifesting in higher Recall values. On the other hand, the weighted models (WLR/WLightGBM/WRF) tend to divide more high and very high susceptibility areas than the unweighted models (LR/LightGBM/RF) (Fig 5, 6). Landslide susceptibility map is the basis of landslide risk evaluation. Suppose the high susceptibility area is incorrectly classified as a low susceptibility zone, which may lead to a false judgment on the risk of landslides and then result in considerable threats to the safety of human life and property. Furthermore, the weighted models pay more attention to landslide samples' classification accuracy, which is the actual concern in the landslide susceptibility evaluation. Although every study area has its own unique landslide contributing factors and geological conditions, the weighted models proposed in this paper will provide significant clues for the landslide susceptibility evaluation concerning the imbalanced landslide samples. Regardless, the weighted models still have several disadvantages. 
+For instance, the cost matrix should be processed before classiﬁcation using weighted models, which is affected by the processing method and is time-consuming. Moreover, a high-resolution DEM for the study area is not freely available, resulting in the poor performance of weighted models. If high-resolution DEM were utilized for extracting landslide-related parameters, these weighted models could achieve better results. 
 
 \section{Conclusions}
 
-In the present study, the class-weighted algorithm combined with traditional machine learning (logistic regression) and ensemble machine learning models (LightGBM and random forest) was utilized to improve the accuracy of the LSM models disturbed by the imbalanced landslide samples based on a case study of Wanzhou section of the Three Gorges Reservoir, China. The result demonstrated that the weighted models (weighted logistic regression, weighted LightGBM, weighted random forest) performed better than unweighted models (logistic regression, LightGBM, weighted random forest), achieving higher AUC, G-mean, and Balanced accuracy values, with the weighted random forest model has a much better performance. The class-weighted algorithm turned the susceptibility evaluation problem into a cost-sensitive issue by setting unequal weights for different classes, which improves the accuracy of the landslide susceptibility evaluation. The weighted models (especially weighted random forest) are probably to be applied to solve the class-imbalanced problem of the landslide susceptibility evaluation in other areas for retarding the harm resulted from landslides. 
+In the prediction of landslide susceptibility, the choice of method has a great influence on the accuracy of the evaluation results. 
+Deep learning methods have also been increasingly applied to the evaluation of landslide susceptibility. 
+However, little research has explored whether deep learning methods are always appropriate. 
+In this article, we compared the deep learning method and the ensemble learning method on the slope-unit-based landslide susceptibility evaluation, and found that the ensemble learning method is more effective. 
+It is not advisable to blindly choose deep learning methods for landslide susceptibility evaluation modeling, and it is necessary to consider the scale of landslide samples.
 
 \section{Acknowledgments}
 

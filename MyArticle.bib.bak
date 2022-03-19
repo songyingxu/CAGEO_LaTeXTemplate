@@ -1,0 +1,38 @@
+@Article{Zhang2022,
+  author    = {Huijuan Zhang and Yingxu Song and Shiluo Xu and Yueshun He and Zhiwen Li and Xianyu Yu and Ye Liang and Weicheng Wu and Yue Wang},
+  journal   = {Computers {\&} Geosciences},
+  title     = {Combining a class-weighted algorithm and machine learning models in landslide susceptibility mapping: A case study of Wanzhou section of the Three Gorges Reservoir, China},
+  year      = {2022},
+  month     = {jan},
+  pages     = {104966},
+  volume    = {158},
+  doi       = {10.1016/j.cageo.2021.104966},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Song2018,
+  author    = {Yingxu Song and Ruiqing Niu and Shiluo Xu and Runqing Ye and Ling Peng and Tao Guo and Shiyao Li and Tao Chen},
+  title     = {Landslide Susceptibility Mapping Based on Weighted Gradient Boosting Decision Tree in Wanzhou Section of the Three Gorges Reservoir Area (China)},
+  journal   = {{ISPRS} International Journal of Geo-Information},
+  year      = {2018},
+  volume    = {8},
+  number    = {1},
+  pages     = {4},
+  month     = {dec},
+  doi       = {10.3390/ijgi8010004},
+  publisher = {{MDPI} {AG}},
+}
+
+@Article{Yu2021SR,
+  author    = {Xianyu Yu and Kaixiang Zhang and Yingxu Song and Weiwei Jiang and Jianguo Zhou},
+  journal   = {Scientific Reports},
+  title     = {Study on landslide susceptibility mapping based on rock{\textendash}soil characteristic factors},
+  year      = {2021},
+  month     = {jul},
+  number    = {1},
+  volume    = {11},
+  doi       = {10.1038/s41598-021-94936-5},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

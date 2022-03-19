@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{61}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -234,11 +234,13 @@
   Science} \bibinfo{volume}{35}, \bibinfo{pages}{321--347}.
 \newblock \DOIprefix\doi{10.1080/13658816.2020.1808897}.
 %Type = Article
-\bibitem[{Friedman(2002)}]{Friedman2002_GBoost}
-\bibinfo{author}{Friedman, J.H.}, \bibinfo{year}{2002}.
-\newblock \bibinfo{title}{Stochastic gradient boosting}.
-\newblock \bibinfo{journal}{Computational Statistics \& Data Analysis}
-  \bibinfo{volume}{38}, \bibinfo{pages}{367--378}.
+\bibitem[{Gao et~al.(2021)Gao, Fam, Tay and Low}]{Gao2021}
+\bibinfo{author}{Gao, H.}, \bibinfo{author}{Fam, P.S.}, \bibinfo{author}{Tay,
+  L.T.}, \bibinfo{author}{Low, H.C.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Landslide susceptibility analysis using gradient
+  boosting models: A case study in penang island, malaysia}.
+\newblock \bibinfo{journal}{Disaster Advances} ,
+  \bibinfo{pages}{22--37}\DOIprefix\doi{10.25303/148da2221}.
 %Type = Article
 \bibitem[{Gao et~al.(2006)Gao, Cui, Zhao and Wei}]{Gao2006IV_Wanzhou}
 \bibinfo{author}{Gao, K.}, \bibinfo{author}{Cui, P.}, \bibinfo{author}{Zhao,
@@ -280,13 +282,6 @@
 \newblock \bibinfo{journal}{Science of The Total Environment}
   \bibinfo{volume}{718}, \bibinfo{pages}{137231}.
 \newblock \DOIprefix\doi{10.1016/j.scitotenv.2020.137231}.
-%Type = Article
-\bibitem[{Jr and Si(2014)}]{Jr2014IJoGIS}
-\bibinfo{author}{Jr, R.G.P.}, \bibinfo{author}{Si, K.}, \bibinfo{year}{2014}.
-\newblock \bibinfo{title}{The total operating characteristic to measure
-  diagnostic ability for multiple thresholds}.
-\newblock \bibinfo{journal}{International Journal of Geographical Information
-  Science} \bibinfo{volume}{28}, \bibinfo{pages}{570--583}.
 %Type = Book
 \bibitem[{Kayastha et~al.(2013)Kayastha, Dhital and
   Smedt}]{Kayastha2013Application_LSM_AHP}
@@ -296,6 +291,17 @@
   for landslide susceptibility mapping: A case study from the Tinau watershed,
   west Nepal}.
 \newblock \bibinfo{publisher}{Pergamon Press, Inc.}
+%Type = Article
+\bibitem[{Ke et~al.(2017)Ke, Meng, Finley, Wang, Chen, Ma, Ye and
+  Liu}]{ke2017lightgbm}
+\bibinfo{author}{Ke, G.}, \bibinfo{author}{Meng, Q.}, \bibinfo{author}{Finley,
+  T.}, \bibinfo{author}{Wang, T.}, \bibinfo{author}{Chen, W.},
+  \bibinfo{author}{Ma, W.}, \bibinfo{author}{Ye, Q.}, \bibinfo{author}{Liu,
+  T.Y.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Lightgbm: A highly efficient gradient boosting
+  decision tree}.
+\newblock \bibinfo{journal}{Advances in neural information processing systems}
+  \bibinfo{volume}{30}, \bibinfo{pages}{3146--3154}.
 %Type = Article
 \bibitem[{Khan et~al.(2021)Khan, Kirschbaum and Stanley}]{Khan2021}
 \bibinfo{author}{Khan, S.}, \bibinfo{author}{Kirschbaum, D.},
@@ -550,6 +556,16 @@
   complexity and training dataset size}.
 \newblock \bibinfo{journal}{Catena} \bibinfo{volume}{145},
   \bibinfo{pages}{164--179}.
+%Type = Article
+\bibitem[{Wang et~al.(2020)Wang, Fang, Wang, Peng and Hong}]{Wang2020}
+\bibinfo{author}{Wang, Y.}, \bibinfo{author}{Fang, Z.}, \bibinfo{author}{Wang,
+  M.}, \bibinfo{author}{Peng, L.}, \bibinfo{author}{Hong, H.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Comparative study of landslide susceptibility mapping
+  with different recurrent neural networks}.
+\newblock \bibinfo{journal}{Computers {\&} Geosciences} \bibinfo{volume}{138},
+  \bibinfo{pages}{104445}.
+\newblock \DOIprefix\doi{10.1016/j.cageo.2020.104445}.
 %Type = Article
 \bibitem[{Wilde et~al.(2018)Wilde, Günther, Reichenbach, Malet and
   Herv{\'{a}}s}]{2018Wildep97104}

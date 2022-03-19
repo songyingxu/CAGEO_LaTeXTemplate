@@ -5,45 +5,45 @@ The style file: cas-model2-names.bst
 Database file #1: bibliography.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty pages in Wu2015LSM_LR_FR
-You've used 60 entries,
+You've used 61 entries,
             2990 wiz_defined-function locations,
-            1175 strings with 23409 characters,
-and the built_in function-call counts, 44487 in all, are:
-= -- 3253
-> -- 2096
-< -- 15
-+ -- 834
-- -- 741
-* -- 5225
-:= -- 6499
-add.period$ -- 214
-call.type$ -- 60
-change.case$ -- 546
-chr.to.int$ -- 59
-cite$ -- 61
-duplicate$ -- 3165
-empty$ -- 3037
-format.name$ -- 927
-if$ -- 8106
+            1183 strings with 23825 characters,
+and the built_in function-call counts, 45817 in all, are:
+= -- 3335
+> -- 2210
+< -- 13
++ -- 875
+- -- 783
+* -- 5418
+:= -- 6697
+add.period$ -- 218
+call.type$ -- 61
+change.case$ -- 565
+chr.to.int$ -- 60
+cite$ -- 62
+duplicate$ -- 3238
+empty$ -- 3097
+format.name$ -- 972
+if$ -- 8332
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 662
-newline$ -- 349
-num.names$ -- 240
-pop$ -- 1076
+missing$ -- 682
+newline$ -- 355
+num.names$ -- 244
+pop$ -- 1105
 preamble$ -- 1
-purify$ -- 487
+purify$ -- 505
 quote$ -- 0
-skip$ -- 824
+skip$ -- 839
 stack$ -- 0
-substring$ -- 1794
-swap$ -- 2493
+substring$ -- 1825
+swap$ -- 2572
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 537
+type$ -- 546
 warning$ -- 1
-while$ -- 260
+while$ -- 265
 width$ -- 0
-write$ -- 922
+write$ -- 938
 (There was 1 warning)

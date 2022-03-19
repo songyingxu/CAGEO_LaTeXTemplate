@@ -1,0 +1,14 @@
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs_rev1/Fig_StudyArea.pdf}
+    \caption{Study Area. (a)Three Gorges Reservoir area;(b)Wanzhou district;(c)Slope units of study area. Image modified from \cite{Zhang2022}.}
+    \label{fig:Figure1}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.65\textwidth]{figs_rev1/Fig_Workflow.png}
+    \caption{Flowchart of the study.}
+    \label{fig:Workflow}
+\end{figure}
